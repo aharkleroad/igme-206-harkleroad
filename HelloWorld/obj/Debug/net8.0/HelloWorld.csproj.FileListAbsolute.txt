@@ -1,0 +1,14 @@
+D:\Profiles\arh4811\source\repos\HelloWorld\bin\Debug\net8.0\HelloWorld.exe
+D:\Profiles\arh4811\source\repos\HelloWorld\bin\Debug\net8.0\HelloWorld.deps.json
+D:\Profiles\arh4811\source\repos\HelloWorld\bin\Debug\net8.0\HelloWorld.runtimeconfig.json
+D:\Profiles\arh4811\source\repos\HelloWorld\bin\Debug\net8.0\HelloWorld.dll
+D:\Profiles\arh4811\source\repos\HelloWorld\bin\Debug\net8.0\HelloWorld.pdb
+D:\Profiles\arh4811\source\repos\HelloWorld\obj\Debug\net8.0\HelloWorld.GeneratedMSBuildEditorConfig.editorconfig
+D:\Profiles\arh4811\source\repos\HelloWorld\obj\Debug\net8.0\HelloWorld.AssemblyInfoInputs.cache
+D:\Profiles\arh4811\source\repos\HelloWorld\obj\Debug\net8.0\HelloWorld.AssemblyInfo.cs
+D:\Profiles\arh4811\source\repos\HelloWorld\obj\Debug\net8.0\HelloWorld.csproj.CoreCompileInputs.cache
+D:\Profiles\arh4811\source\repos\HelloWorld\obj\Debug\net8.0\HelloWorld.dll
+D:\Profiles\arh4811\source\repos\HelloWorld\obj\Debug\net8.0\refint\HelloWorld.dll
+D:\Profiles\arh4811\source\repos\HelloWorld\obj\Debug\net8.0\HelloWorld.pdb
+D:\Profiles\arh4811\source\repos\HelloWorld\obj\Debug\net8.0\HelloWorld.genruntimeconfig.cache
+D:\Profiles\arh4811\source\repos\HelloWorld\obj\Debug\net8.0\ref\HelloWorld.dll

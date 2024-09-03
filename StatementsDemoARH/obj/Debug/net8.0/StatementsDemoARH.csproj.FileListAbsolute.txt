@@ -1,0 +1,14 @@
+D:\Profiles\arh4811\source\repos\StatementsDemoARH\bin\Debug\net8.0\StatementsDemoARH.exe
+D:\Profiles\arh4811\source\repos\StatementsDemoARH\bin\Debug\net8.0\StatementsDemoARH.deps.json
+D:\Profiles\arh4811\source\repos\StatementsDemoARH\bin\Debug\net8.0\StatementsDemoARH.runtimeconfig.json
+D:\Profiles\arh4811\source\repos\StatementsDemoARH\bin\Debug\net8.0\StatementsDemoARH.dll
+D:\Profiles\arh4811\source\repos\StatementsDemoARH\bin\Debug\net8.0\StatementsDemoARH.pdb
+D:\Profiles\arh4811\source\repos\StatementsDemoARH\obj\Debug\net8.0\StatementsDemoARH.GeneratedMSBuildEditorConfig.editorconfig
+D:\Profiles\arh4811\source\repos\StatementsDemoARH\obj\Debug\net8.0\StatementsDemoARH.AssemblyInfoInputs.cache
+D:\Profiles\arh4811\source\repos\StatementsDemoARH\obj\Debug\net8.0\StatementsDemoARH.AssemblyInfo.cs
+D:\Profiles\arh4811\source\repos\StatementsDemoARH\obj\Debug\net8.0\StatementsDemoARH.csproj.CoreCompileInputs.cache
+D:\Profiles\arh4811\source\repos\StatementsDemoARH\obj\Debug\net8.0\StatementsDemoARH.dll
+D:\Profiles\arh4811\source\repos\StatementsDemoARH\obj\Debug\net8.0\refint\StatementsDemoARH.dll
+D:\Profiles\arh4811\source\repos\StatementsDemoARH\obj\Debug\net8.0\StatementsDemoARH.pdb
+D:\Profiles\arh4811\source\repos\StatementsDemoARH\obj\Debug\net8.0\StatementsDemoARH.genruntimeconfig.cache
+D:\Profiles\arh4811\source\repos\StatementsDemoARH\obj\Debug\net8.0\ref\StatementsDemoARH.dll

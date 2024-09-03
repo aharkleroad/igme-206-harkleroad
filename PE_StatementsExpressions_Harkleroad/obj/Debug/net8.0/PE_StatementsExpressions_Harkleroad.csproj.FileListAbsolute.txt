@@ -1,0 +1,14 @@
+D:\Profiles\arh4811\source\repos\PE_StatementsExpressions_Harkleroad\bin\Debug\net8.0\PE_StatementsExpressions_Harkleroad.exe
+D:\Profiles\arh4811\source\repos\PE_StatementsExpressions_Harkleroad\bin\Debug\net8.0\PE_StatementsExpressions_Harkleroad.deps.json
+D:\Profiles\arh4811\source\repos\PE_StatementsExpressions_Harkleroad\bin\Debug\net8.0\PE_StatementsExpressions_Harkleroad.runtimeconfig.json
+D:\Profiles\arh4811\source\repos\PE_StatementsExpressions_Harkleroad\bin\Debug\net8.0\PE_StatementsExpressions_Harkleroad.dll
+D:\Profiles\arh4811\source\repos\PE_StatementsExpressions_Harkleroad\bin\Debug\net8.0\PE_StatementsExpressions_Harkleroad.pdb
+D:\Profiles\arh4811\source\repos\PE_StatementsExpressions_Harkleroad\obj\Debug\net8.0\PE_StatementsExpressions_Harkleroad.GeneratedMSBuildEditorConfig.editorconfig
+D:\Profiles\arh4811\source\repos\PE_StatementsExpressions_Harkleroad\obj\Debug\net8.0\PE_StatementsExpressions_Harkleroad.AssemblyInfoInputs.cache
+D:\Profiles\arh4811\source\repos\PE_StatementsExpressions_Harkleroad\obj\Debug\net8.0\PE_StatementsExpressions_Harkleroad.AssemblyInfo.cs
+D:\Profiles\arh4811\source\repos\PE_StatementsExpressions_Harkleroad\obj\Debug\net8.0\PE_StatementsExpressions_Harkleroad.csproj.CoreCompileInputs.cache
+D:\Profiles\arh4811\source\repos\PE_StatementsExpressions_Harkleroad\obj\Debug\net8.0\PE_StatementsExpressions_Harkleroad.dll
+D:\Profiles\arh4811\source\repos\PE_StatementsExpressions_Harkleroad\obj\Debug\net8.0\refint\PE_StatementsExpressions_Harkleroad.dll
+D:\Profiles\arh4811\source\repos\PE_StatementsExpressions_Harkleroad\obj\Debug\net8.0\PE_StatementsExpressions_Harkleroad.pdb
+D:\Profiles\arh4811\source\repos\PE_StatementsExpressions_Harkleroad\obj\Debug\net8.0\PE_StatementsExpressions_Harkleroad.genruntimeconfig.cache
+D:\Profiles\arh4811\source\repos\PE_StatementsExpressions_Harkleroad\obj\Debug\net8.0\ref\PE_StatementsExpressions_Harkleroad.dll

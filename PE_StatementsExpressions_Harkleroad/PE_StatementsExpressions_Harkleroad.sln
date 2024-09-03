@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PE_StatementsExpressions_Harkleroad", "PE_StatementsExpressions_Harkleroad.csproj", "{2DA71610-C9EC-4A43-B64D-EF48ED43F16F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DA71610-C9EC-4A43-B64D-EF48ED43F16F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DA71610-C9EC-4A43-B64D-EF48ED43F16F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DA71610-C9EC-4A43-B64D-EF48ED43F16F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DA71610-C9EC-4A43-B64D-EF48ED43F16F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2D91CC79-A98B-40E6-9A41-21653C656A30}
+	EndGlobalSection
+EndGlobal
