@@ -1,0 +1,14 @@
+C:\Users\aizly\source\repos\PE_DataTypesAndVariables_AizlynnHarkleroad\bin\Debug\net8.0\PE_DataTypesAndVariables_AizlynnHarkleroad.exe
+C:\Users\aizly\source\repos\PE_DataTypesAndVariables_AizlynnHarkleroad\bin\Debug\net8.0\PE_DataTypesAndVariables_AizlynnHarkleroad.deps.json
+C:\Users\aizly\source\repos\PE_DataTypesAndVariables_AizlynnHarkleroad\bin\Debug\net8.0\PE_DataTypesAndVariables_AizlynnHarkleroad.runtimeconfig.json
+C:\Users\aizly\source\repos\PE_DataTypesAndVariables_AizlynnHarkleroad\bin\Debug\net8.0\PE_DataTypesAndVariables_AizlynnHarkleroad.dll
+C:\Users\aizly\source\repos\PE_DataTypesAndVariables_AizlynnHarkleroad\bin\Debug\net8.0\PE_DataTypesAndVariables_AizlynnHarkleroad.pdb
+C:\Users\aizly\source\repos\PE_DataTypesAndVariables_AizlynnHarkleroad\obj\Debug\net8.0\PE_DataTypesAndVariables_AizlynnHarkleroad.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aizly\source\repos\PE_DataTypesAndVariables_AizlynnHarkleroad\obj\Debug\net8.0\PE_DataTypesAndVariables_AizlynnHarkleroad.AssemblyInfoInputs.cache
+C:\Users\aizly\source\repos\PE_DataTypesAndVariables_AizlynnHarkleroad\obj\Debug\net8.0\PE_DataTypesAndVariables_AizlynnHarkleroad.AssemblyInfo.cs
+C:\Users\aizly\source\repos\PE_DataTypesAndVariables_AizlynnHarkleroad\obj\Debug\net8.0\PE_DataTypesAndVariables_AizlynnHarkleroad.csproj.CoreCompileInputs.cache
+C:\Users\aizly\source\repos\PE_DataTypesAndVariables_AizlynnHarkleroad\obj\Debug\net8.0\PE_DataTypesAndVariables_AizlynnHarkleroad.dll
+C:\Users\aizly\source\repos\PE_DataTypesAndVariables_AizlynnHarkleroad\obj\Debug\net8.0\refint\PE_DataTypesAndVariables_AizlynnHarkleroad.dll
+C:\Users\aizly\source\repos\PE_DataTypesAndVariables_AizlynnHarkleroad\obj\Debug\net8.0\PE_DataTypesAndVariables_AizlynnHarkleroad.pdb
+C:\Users\aizly\source\repos\PE_DataTypesAndVariables_AizlynnHarkleroad\obj\Debug\net8.0\PE_DataTypesAndVariables_AizlynnHarkleroad.genruntimeconfig.cache
+C:\Users\aizly\source\repos\PE_DataTypesAndVariables_AizlynnHarkleroad\obj\Debug\net8.0\ref\PE_DataTypesAndVariables_AizlynnHarkleroad.dll
