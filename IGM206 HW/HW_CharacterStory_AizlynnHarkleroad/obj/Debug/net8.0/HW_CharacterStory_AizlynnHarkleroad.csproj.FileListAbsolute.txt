@@ -1,0 +1,14 @@
+C:\Users\aizly\source\repos\HW_CharacterStory_AizlynnHarkleroad\bin\Debug\net8.0\HW_CharacterStory_AizlynnHarkleroad.exe
+C:\Users\aizly\source\repos\HW_CharacterStory_AizlynnHarkleroad\bin\Debug\net8.0\HW_CharacterStory_AizlynnHarkleroad.deps.json
+C:\Users\aizly\source\repos\HW_CharacterStory_AizlynnHarkleroad\bin\Debug\net8.0\HW_CharacterStory_AizlynnHarkleroad.runtimeconfig.json
+C:\Users\aizly\source\repos\HW_CharacterStory_AizlynnHarkleroad\bin\Debug\net8.0\HW_CharacterStory_AizlynnHarkleroad.dll
+C:\Users\aizly\source\repos\HW_CharacterStory_AizlynnHarkleroad\bin\Debug\net8.0\HW_CharacterStory_AizlynnHarkleroad.pdb
+C:\Users\aizly\source\repos\HW_CharacterStory_AizlynnHarkleroad\obj\Debug\net8.0\HW_CharacterStory_AizlynnHarkleroad.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aizly\source\repos\HW_CharacterStory_AizlynnHarkleroad\obj\Debug\net8.0\HW_CharacterStory_AizlynnHarkleroad.AssemblyInfoInputs.cache
+C:\Users\aizly\source\repos\HW_CharacterStory_AizlynnHarkleroad\obj\Debug\net8.0\HW_CharacterStory_AizlynnHarkleroad.AssemblyInfo.cs
+C:\Users\aizly\source\repos\HW_CharacterStory_AizlynnHarkleroad\obj\Debug\net8.0\HW_CharacterStory_AizlynnHarkleroad.csproj.CoreCompileInputs.cache
+C:\Users\aizly\source\repos\HW_CharacterStory_AizlynnHarkleroad\obj\Debug\net8.0\HW_CharacterStory_AizlynnHarkleroad.dll
+C:\Users\aizly\source\repos\HW_CharacterStory_AizlynnHarkleroad\obj\Debug\net8.0\refint\HW_CharacterStory_AizlynnHarkleroad.dll
+C:\Users\aizly\source\repos\HW_CharacterStory_AizlynnHarkleroad\obj\Debug\net8.0\HW_CharacterStory_AizlynnHarkleroad.pdb
+C:\Users\aizly\source\repos\HW_CharacterStory_AizlynnHarkleroad\obj\Debug\net8.0\HW_CharacterStory_AizlynnHarkleroad.genruntimeconfig.cache
+C:\Users\aizly\source\repos\HW_CharacterStory_AizlynnHarkleroad\obj\Debug\net8.0\ref\HW_CharacterStory_AizlynnHarkleroad.dll
