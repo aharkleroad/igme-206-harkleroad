@@ -1,0 +1,14 @@
+C:\Users\aizly\source\repos\PE_IfStatements_AizlynnHarkleroad\bin\Debug\net8.0\PE_IfStatements_AizlynnHarkleroad.exe
+C:\Users\aizly\source\repos\PE_IfStatements_AizlynnHarkleroad\bin\Debug\net8.0\PE_IfStatements_AizlynnHarkleroad.deps.json
+C:\Users\aizly\source\repos\PE_IfStatements_AizlynnHarkleroad\bin\Debug\net8.0\PE_IfStatements_AizlynnHarkleroad.runtimeconfig.json
+C:\Users\aizly\source\repos\PE_IfStatements_AizlynnHarkleroad\bin\Debug\net8.0\PE_IfStatements_AizlynnHarkleroad.dll
+C:\Users\aizly\source\repos\PE_IfStatements_AizlynnHarkleroad\bin\Debug\net8.0\PE_IfStatements_AizlynnHarkleroad.pdb
+C:\Users\aizly\source\repos\PE_IfStatements_AizlynnHarkleroad\obj\Debug\net8.0\PE_IfStatements_AizlynnHarkleroad.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aizly\source\repos\PE_IfStatements_AizlynnHarkleroad\obj\Debug\net8.0\PE_IfStatements_AizlynnHarkleroad.AssemblyInfoInputs.cache
+C:\Users\aizly\source\repos\PE_IfStatements_AizlynnHarkleroad\obj\Debug\net8.0\PE_IfStatements_AizlynnHarkleroad.AssemblyInfo.cs
+C:\Users\aizly\source\repos\PE_IfStatements_AizlynnHarkleroad\obj\Debug\net8.0\PE_IfStatements_AizlynnHarkleroad.csproj.CoreCompileInputs.cache
+C:\Users\aizly\source\repos\PE_IfStatements_AizlynnHarkleroad\obj\Debug\net8.0\PE_IfStatements_AizlynnHarkleroad.dll
+C:\Users\aizly\source\repos\PE_IfStatements_AizlynnHarkleroad\obj\Debug\net8.0\refint\PE_IfStatements_AizlynnHarkleroad.dll
+C:\Users\aizly\source\repos\PE_IfStatements_AizlynnHarkleroad\obj\Debug\net8.0\PE_IfStatements_AizlynnHarkleroad.pdb
+C:\Users\aizly\source\repos\PE_IfStatements_AizlynnHarkleroad\obj\Debug\net8.0\PE_IfStatements_AizlynnHarkleroad.genruntimeconfig.cache
+C:\Users\aizly\source\repos\PE_IfStatements_AizlynnHarkleroad\obj\Debug\net8.0\ref\PE_IfStatements_AizlynnHarkleroad.dll
