@@ -1,0 +1,14 @@
+C:\Users\aizly\source\repos\PE_CastingMathDocumentation_AizlynnHarkleroad\bin\Debug\net8.0\PE_CastingMathDocumentation_AizlynnHarkleroad.exe
+C:\Users\aizly\source\repos\PE_CastingMathDocumentation_AizlynnHarkleroad\bin\Debug\net8.0\PE_CastingMathDocumentation_AizlynnHarkleroad.deps.json
+C:\Users\aizly\source\repos\PE_CastingMathDocumentation_AizlynnHarkleroad\bin\Debug\net8.0\PE_CastingMathDocumentation_AizlynnHarkleroad.runtimeconfig.json
+C:\Users\aizly\source\repos\PE_CastingMathDocumentation_AizlynnHarkleroad\bin\Debug\net8.0\PE_CastingMathDocumentation_AizlynnHarkleroad.dll
+C:\Users\aizly\source\repos\PE_CastingMathDocumentation_AizlynnHarkleroad\bin\Debug\net8.0\PE_CastingMathDocumentation_AizlynnHarkleroad.pdb
+C:\Users\aizly\source\repos\PE_CastingMathDocumentation_AizlynnHarkleroad\obj\Debug\net8.0\PE_CastingMathDocumentation_AizlynnHarkleroad.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aizly\source\repos\PE_CastingMathDocumentation_AizlynnHarkleroad\obj\Debug\net8.0\PE_CastingMathDocumentation_AizlynnHarkleroad.AssemblyInfoInputs.cache
+C:\Users\aizly\source\repos\PE_CastingMathDocumentation_AizlynnHarkleroad\obj\Debug\net8.0\PE_CastingMathDocumentation_AizlynnHarkleroad.AssemblyInfo.cs
+C:\Users\aizly\source\repos\PE_CastingMathDocumentation_AizlynnHarkleroad\obj\Debug\net8.0\PE_CastingMathDocumentation_AizlynnHarkleroad.csproj.CoreCompileInputs.cache
+C:\Users\aizly\source\repos\PE_CastingMathDocumentation_AizlynnHarkleroad\obj\Debug\net8.0\PE_CastingMathDocumentation_AizlynnHarkleroad.dll
+C:\Users\aizly\source\repos\PE_CastingMathDocumentation_AizlynnHarkleroad\obj\Debug\net8.0\refint\PE_CastingMathDocumentation_AizlynnHarkleroad.dll
+C:\Users\aizly\source\repos\PE_CastingMathDocumentation_AizlynnHarkleroad\obj\Debug\net8.0\PE_CastingMathDocumentation_AizlynnHarkleroad.pdb
+C:\Users\aizly\source\repos\PE_CastingMathDocumentation_AizlynnHarkleroad\obj\Debug\net8.0\PE_CastingMathDocumentation_AizlynnHarkleroad.genruntimeconfig.cache
+C:\Users\aizly\source\repos\PE_CastingMathDocumentation_AizlynnHarkleroad\obj\Debug\net8.0\ref\PE_CastingMathDocumentation_AizlynnHarkleroad.dll
