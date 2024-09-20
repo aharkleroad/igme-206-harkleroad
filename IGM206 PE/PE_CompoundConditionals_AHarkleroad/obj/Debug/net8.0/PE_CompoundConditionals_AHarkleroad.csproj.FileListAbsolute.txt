@@ -1,0 +1,14 @@
+C:\Users\aizly\source\repos\PE_CompoundConditionals_AHarkleroad\bin\Debug\net8.0\PE_CompoundConditionals_AHarkleroad.exe
+C:\Users\aizly\source\repos\PE_CompoundConditionals_AHarkleroad\bin\Debug\net8.0\PE_CompoundConditionals_AHarkleroad.deps.json
+C:\Users\aizly\source\repos\PE_CompoundConditionals_AHarkleroad\bin\Debug\net8.0\PE_CompoundConditionals_AHarkleroad.runtimeconfig.json
+C:\Users\aizly\source\repos\PE_CompoundConditionals_AHarkleroad\bin\Debug\net8.0\PE_CompoundConditionals_AHarkleroad.dll
+C:\Users\aizly\source\repos\PE_CompoundConditionals_AHarkleroad\bin\Debug\net8.0\PE_CompoundConditionals_AHarkleroad.pdb
+C:\Users\aizly\source\repos\PE_CompoundConditionals_AHarkleroad\obj\Debug\net8.0\PE_CompoundConditionals_AHarkleroad.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aizly\source\repos\PE_CompoundConditionals_AHarkleroad\obj\Debug\net8.0\PE_CompoundConditionals_AHarkleroad.AssemblyInfoInputs.cache
+C:\Users\aizly\source\repos\PE_CompoundConditionals_AHarkleroad\obj\Debug\net8.0\PE_CompoundConditionals_AHarkleroad.AssemblyInfo.cs
+C:\Users\aizly\source\repos\PE_CompoundConditionals_AHarkleroad\obj\Debug\net8.0\PE_CompoundConditionals_AHarkleroad.csproj.CoreCompileInputs.cache
+C:\Users\aizly\source\repos\PE_CompoundConditionals_AHarkleroad\obj\Debug\net8.0\PE_CompoundConditionals_AHarkleroad.dll
+C:\Users\aizly\source\repos\PE_CompoundConditionals_AHarkleroad\obj\Debug\net8.0\refint\PE_CompoundConditionals_AHarkleroad.dll
+C:\Users\aizly\source\repos\PE_CompoundConditionals_AHarkleroad\obj\Debug\net8.0\PE_CompoundConditionals_AHarkleroad.pdb
+C:\Users\aizly\source\repos\PE_CompoundConditionals_AHarkleroad\obj\Debug\net8.0\PE_CompoundConditionals_AHarkleroad.genruntimeconfig.cache
+C:\Users\aizly\source\repos\PE_CompoundConditionals_AHarkleroad\obj\Debug\net8.0\ref\PE_CompoundConditionals_AHarkleroad.dll
