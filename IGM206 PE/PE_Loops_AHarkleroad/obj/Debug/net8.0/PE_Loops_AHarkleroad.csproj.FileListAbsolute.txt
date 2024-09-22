@@ -1,0 +1,15 @@
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_Loops_AHarkleroad\bin\Debug\net8.0\PE_Loops_AHarkleroad.exe
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_Loops_AHarkleroad\bin\Debug\net8.0\PE_Loops_AHarkleroad.deps.json
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_Loops_AHarkleroad\bin\Debug\net8.0\PE_Loops_AHarkleroad.runtimeconfig.json
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_Loops_AHarkleroad\bin\Debug\net8.0\PE_Loops_AHarkleroad.dll
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_Loops_AHarkleroad\bin\Debug\net8.0\PE_Loops_AHarkleroad.pdb
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_Loops_AHarkleroad\obj\Debug\net8.0\PE_Loops_AHarkleroad.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_Loops_AHarkleroad\obj\Debug\net8.0\PE_Loops_AHarkleroad.AssemblyInfoInputs.cache
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_Loops_AHarkleroad\obj\Debug\net8.0\PE_Loops_AHarkleroad.AssemblyInfo.cs
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_Loops_AHarkleroad\obj\Debug\net8.0\PE_Loops_AHarkleroad.csproj.CoreCompileInputs.cache
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_Loops_AHarkleroad\obj\Debug\net8.0\PE_Loops_AHarkleroad.sourcelink.json
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_Loops_AHarkleroad\obj\Debug\net8.0\PE_Loops_AHarkleroad.dll
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_Loops_AHarkleroad\obj\Debug\net8.0\refint\PE_Loops_AHarkleroad.dll
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_Loops_AHarkleroad\obj\Debug\net8.0\PE_Loops_AHarkleroad.pdb
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_Loops_AHarkleroad\obj\Debug\net8.0\PE_Loops_AHarkleroad.genruntimeconfig.cache
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_Loops_AHarkleroad\obj\Debug\net8.0\ref\PE_Loops_AHarkleroad.dll
