@@ -1,0 +1,15 @@
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_StaticHelperMethods_AHarkleroad\bin\Debug\net8.0\PE_StaticHelperMethods_AHarkleroad.exe
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_StaticHelperMethods_AHarkleroad\bin\Debug\net8.0\PE_StaticHelperMethods_AHarkleroad.deps.json
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_StaticHelperMethods_AHarkleroad\bin\Debug\net8.0\PE_StaticHelperMethods_AHarkleroad.runtimeconfig.json
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_StaticHelperMethods_AHarkleroad\bin\Debug\net8.0\PE_StaticHelperMethods_AHarkleroad.dll
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_StaticHelperMethods_AHarkleroad\bin\Debug\net8.0\PE_StaticHelperMethods_AHarkleroad.pdb
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_StaticHelperMethods_AHarkleroad\obj\Debug\net8.0\PE_StaticHelperMethods_AHarkleroad.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_StaticHelperMethods_AHarkleroad\obj\Debug\net8.0\PE_StaticHelperMethods_AHarkleroad.AssemblyInfoInputs.cache
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_StaticHelperMethods_AHarkleroad\obj\Debug\net8.0\PE_StaticHelperMethods_AHarkleroad.AssemblyInfo.cs
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_StaticHelperMethods_AHarkleroad\obj\Debug\net8.0\PE_StaticHelperMethods_AHarkleroad.csproj.CoreCompileInputs.cache
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_StaticHelperMethods_AHarkleroad\obj\Debug\net8.0\PE_StaticHelperMethods_AHarkleroad.sourcelink.json
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_StaticHelperMethods_AHarkleroad\obj\Debug\net8.0\PE_StaticHelperMethods_AHarkleroad.dll
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_StaticHelperMethods_AHarkleroad\obj\Debug\net8.0\refint\PE_StaticHelperMethods_AHarkleroad.dll
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_StaticHelperMethods_AHarkleroad\obj\Debug\net8.0\PE_StaticHelperMethods_AHarkleroad.pdb
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_StaticHelperMethods_AHarkleroad\obj\Debug\net8.0\PE_StaticHelperMethods_AHarkleroad.genruntimeconfig.cache
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_StaticHelperMethods_AHarkleroad\obj\Debug\net8.0\ref\PE_StaticHelperMethods_AHarkleroad.dll
