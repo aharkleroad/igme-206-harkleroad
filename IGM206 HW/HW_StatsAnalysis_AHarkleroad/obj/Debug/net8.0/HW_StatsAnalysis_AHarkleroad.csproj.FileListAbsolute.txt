@@ -1,0 +1,15 @@
+C:\Users\aizly\source\repos\igme-206-harkleroad\HW_StatsAnalysis_AHarkleroad\obj\Debug\net8.0\HW_StatsAnalysis_AHarkleroad.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aizly\source\repos\igme-206-harkleroad\HW_StatsAnalysis_AHarkleroad\obj\Debug\net8.0\HW_StatsAnalysis_AHarkleroad.AssemblyInfoInputs.cache
+C:\Users\aizly\source\repos\igme-206-harkleroad\HW_StatsAnalysis_AHarkleroad\obj\Debug\net8.0\HW_StatsAnalysis_AHarkleroad.AssemblyInfo.cs
+C:\Users\aizly\source\repos\igme-206-harkleroad\HW_StatsAnalysis_AHarkleroad\obj\Debug\net8.0\HW_StatsAnalysis_AHarkleroad.csproj.CoreCompileInputs.cache
+C:\Users\aizly\source\repos\igme-206-harkleroad\HW_StatsAnalysis_AHarkleroad\obj\Debug\net8.0\HW_StatsAnalysis_AHarkleroad.sourcelink.json
+C:\Users\aizly\source\repos\igme-206-harkleroad\HW_StatsAnalysis_AHarkleroad\bin\Debug\net8.0\HW_StatsAnalysis_AHarkleroad.exe
+C:\Users\aizly\source\repos\igme-206-harkleroad\HW_StatsAnalysis_AHarkleroad\bin\Debug\net8.0\HW_StatsAnalysis_AHarkleroad.deps.json
+C:\Users\aizly\source\repos\igme-206-harkleroad\HW_StatsAnalysis_AHarkleroad\bin\Debug\net8.0\HW_StatsAnalysis_AHarkleroad.runtimeconfig.json
+C:\Users\aizly\source\repos\igme-206-harkleroad\HW_StatsAnalysis_AHarkleroad\bin\Debug\net8.0\HW_StatsAnalysis_AHarkleroad.dll
+C:\Users\aizly\source\repos\igme-206-harkleroad\HW_StatsAnalysis_AHarkleroad\bin\Debug\net8.0\HW_StatsAnalysis_AHarkleroad.pdb
+C:\Users\aizly\source\repos\igme-206-harkleroad\HW_StatsAnalysis_AHarkleroad\obj\Debug\net8.0\HW_StatsAnalysis_AHarkleroad.dll
+C:\Users\aizly\source\repos\igme-206-harkleroad\HW_StatsAnalysis_AHarkleroad\obj\Debug\net8.0\refint\HW_StatsAnalysis_AHarkleroad.dll
+C:\Users\aizly\source\repos\igme-206-harkleroad\HW_StatsAnalysis_AHarkleroad\obj\Debug\net8.0\HW_StatsAnalysis_AHarkleroad.pdb
+C:\Users\aizly\source\repos\igme-206-harkleroad\HW_StatsAnalysis_AHarkleroad\obj\Debug\net8.0\HW_StatsAnalysis_AHarkleroad.genruntimeconfig.cache
+C:\Users\aizly\source\repos\igme-206-harkleroad\HW_StatsAnalysis_AHarkleroad\obj\Debug\net8.0\ref\HW_StatsAnalysis_AHarkleroad.dll
