@@ -1,0 +1,15 @@
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_ExceptionHandling_AHarkleroad\bin\Debug\net8.0\PE_ExceptionHandling_AHarkleroad.exe
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_ExceptionHandling_AHarkleroad\bin\Debug\net8.0\PE_ExceptionHandling_AHarkleroad.deps.json
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_ExceptionHandling_AHarkleroad\bin\Debug\net8.0\PE_ExceptionHandling_AHarkleroad.runtimeconfig.json
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_ExceptionHandling_AHarkleroad\bin\Debug\net8.0\PE_ExceptionHandling_AHarkleroad.dll
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_ExceptionHandling_AHarkleroad\bin\Debug\net8.0\PE_ExceptionHandling_AHarkleroad.pdb
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_ExceptionHandling_AHarkleroad\obj\Debug\net8.0\PE_ExceptionHandling_AHarkleroad.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_ExceptionHandling_AHarkleroad\obj\Debug\net8.0\PE_ExceptionHandling_AHarkleroad.AssemblyInfoInputs.cache
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_ExceptionHandling_AHarkleroad\obj\Debug\net8.0\PE_ExceptionHandling_AHarkleroad.AssemblyInfo.cs
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_ExceptionHandling_AHarkleroad\obj\Debug\net8.0\PE_ExceptionHandling_AHarkleroad.csproj.CoreCompileInputs.cache
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_ExceptionHandling_AHarkleroad\obj\Debug\net8.0\PE_ExceptionHandling_AHarkleroad.sourcelink.json
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_ExceptionHandling_AHarkleroad\obj\Debug\net8.0\PE_ExceptionHandling_AHarkleroad.dll
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_ExceptionHandling_AHarkleroad\obj\Debug\net8.0\refint\PE_ExceptionHandling_AHarkleroad.dll
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_ExceptionHandling_AHarkleroad\obj\Debug\net8.0\PE_ExceptionHandling_AHarkleroad.pdb
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_ExceptionHandling_AHarkleroad\obj\Debug\net8.0\PE_ExceptionHandling_AHarkleroad.genruntimeconfig.cache
+C:\Users\aizly\source\repos\igme-206-harkleroad\IGM206 PE\PE_ExceptionHandling_AHarkleroad\obj\Debug\net8.0\ref\PE_ExceptionHandling_AHarkleroad.dll
