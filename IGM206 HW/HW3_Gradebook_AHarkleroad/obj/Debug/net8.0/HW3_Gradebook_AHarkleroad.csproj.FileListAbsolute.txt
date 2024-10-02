@@ -1,0 +1,15 @@
+C:\Users\aizly\source\repos\igme-206-harkleroad\HW3_Gradebook_AHarkleroad\bin\Debug\net8.0\HW3_Gradebook_AHarkleroad.exe
+C:\Users\aizly\source\repos\igme-206-harkleroad\HW3_Gradebook_AHarkleroad\bin\Debug\net8.0\HW3_Gradebook_AHarkleroad.deps.json
+C:\Users\aizly\source\repos\igme-206-harkleroad\HW3_Gradebook_AHarkleroad\bin\Debug\net8.0\HW3_Gradebook_AHarkleroad.runtimeconfig.json
+C:\Users\aizly\source\repos\igme-206-harkleroad\HW3_Gradebook_AHarkleroad\bin\Debug\net8.0\HW3_Gradebook_AHarkleroad.dll
+C:\Users\aizly\source\repos\igme-206-harkleroad\HW3_Gradebook_AHarkleroad\bin\Debug\net8.0\HW3_Gradebook_AHarkleroad.pdb
+C:\Users\aizly\source\repos\igme-206-harkleroad\HW3_Gradebook_AHarkleroad\obj\Debug\net8.0\HW3_Gradebook_AHarkleroad.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aizly\source\repos\igme-206-harkleroad\HW3_Gradebook_AHarkleroad\obj\Debug\net8.0\HW3_Gradebook_AHarkleroad.AssemblyInfoInputs.cache
+C:\Users\aizly\source\repos\igme-206-harkleroad\HW3_Gradebook_AHarkleroad\obj\Debug\net8.0\HW3_Gradebook_AHarkleroad.AssemblyInfo.cs
+C:\Users\aizly\source\repos\igme-206-harkleroad\HW3_Gradebook_AHarkleroad\obj\Debug\net8.0\HW3_Gradebook_AHarkleroad.csproj.CoreCompileInputs.cache
+C:\Users\aizly\source\repos\igme-206-harkleroad\HW3_Gradebook_AHarkleroad\obj\Debug\net8.0\HW3_Gradebook_AHarkleroad.sourcelink.json
+C:\Users\aizly\source\repos\igme-206-harkleroad\HW3_Gradebook_AHarkleroad\obj\Debug\net8.0\HW3_Gradebook_AHarkleroad.dll
+C:\Users\aizly\source\repos\igme-206-harkleroad\HW3_Gradebook_AHarkleroad\obj\Debug\net8.0\refint\HW3_Gradebook_AHarkleroad.dll
+C:\Users\aizly\source\repos\igme-206-harkleroad\HW3_Gradebook_AHarkleroad\obj\Debug\net8.0\HW3_Gradebook_AHarkleroad.pdb
+C:\Users\aizly\source\repos\igme-206-harkleroad\HW3_Gradebook_AHarkleroad\obj\Debug\net8.0\HW3_Gradebook_AHarkleroad.genruntimeconfig.cache
+C:\Users\aizly\source\repos\igme-206-harkleroad\HW3_Gradebook_AHarkleroad\obj\Debug\net8.0\ref\HW3_Gradebook_AHarkleroad.dll
