@@ -5,8 +5,8 @@
  * Write-up: https://docs.google.com/document/d/15Rl0oXwNXdGze8p5HcrZ8n4y78oiubW5pbkJei2YTPI/edit?usp=sharing
  *
  * Primary upgrades:
- *  1. 
- *  2.
+ *  1. 2 (Enemy Customization)
+ *  2. 6 (Power Ups)
  *  
  * Optional extra upgrades:
  *  3.
@@ -106,6 +106,10 @@ namespace HW4_Arena
             // Build & print the Arena
             arena = BuildArena(out numEnemies);
 
+            // Enemy Customization
+            // create an array to hold different enemy health multipliers
+            //will be accessed in Fight() when a battle starts
+
             // ** GAME LOOP **
             while (stillPlaying)
             {
@@ -154,6 +158,9 @@ namespace HW4_Arena
                 // Act based on what is in the next location (row, col)
                 switch(arena[nextLoc[0], nextLoc[1]])
                 {
+                    // 6. Power Ups
+                    // add a case "item" that adds to a stat
+
                     // Do nothing. We're stuck.
                     case Wall:
                         Console.WriteLine("\n You can't go there...");
@@ -218,6 +225,11 @@ namespace HW4_Arena
         /// </summary>
         /// <param name="stats">A reference to an int[] containing [Strength, Dexterity, Constitution, Health]</param>
         /// <returns>The result of the fight using an int code. See the constants at the top of Program.cs</returns>
+        
+        // this method models a fight between the player and different enemies
+        // use a while loop to start the battle and a series of if/else statements to handle player actions
+        // if/else will also handle winning and losing
+        // loop continues until the fight has ended and returns the result to main
         private static int Fight(int[] stats)
         {
             // TODO: Implement the Fight method
@@ -232,6 +244,11 @@ namespace HW4_Arena
         /// </summary>
         /// <param name="statsArray">A reference int[4] array that this method will put data into</param>
         /// <returns>The player's name</returns>
+        
+        // Will prompt the user for their name, then use GetValidIntegerInput to collect their stats
+        // all stats must be assigned a value of 1 or greater and must not sum to more than the max
+        // skill points
+        // then health will be updated and their name returned
         private static string GetPlayerInfo(int[] statsArray)
         {
             // TODO: Implement the GetPlayerInfo method
@@ -251,6 +268,14 @@ namespace HW4_Arena
         /// </summary>
         /// <param name="numEnemies">An out param to store the total number of enemies created</param>
         /// <returns>A reference to the final 2d arena</returns>
+        
+        // prompt the player for the desired arena size using GetValidIntegerInput
+        // then create a 2D array based on the input 
+        // use a series of nested for loops to access each element in the array
+        // then set that element using a series of if/else statements
+
+        // 6. Power Ups
+        // additionally, add a power up to an otherwise blank space
         private static char[,] BuildArena(out int numEnemies)
         {
             // Start by setting numEnemies to 0. Increment this whenever you create
@@ -272,6 +297,11 @@ namespace HW4_Arena
         /// </summary>
         /// <param name="arena">A reference to the arena to print. This could be ANY size.</param>
         /// <param name="playerLoc">The player's location in a 1d array with element [row, col]</param>
+        
+        // this function prints the current state if the arena
+        // uses a series of nested loops to access each element of the array
+        // it then prints that element in the assigned color using a switch
+        // if the element contains the player character, print their info to the console
         private static void PrintArena(char[,] arena, int[] playerLoc)
         {
             // TODO: Implement the PrintArena method
