@@ -19,10 +19,25 @@
         /// <returns>The final, valid, user-entered value.</returns>
         public static int GetValidIntegerInput(string prompt, int min, int max)
         {
-            // TODO: Implement the GetValidIntegerInput method (you should be able to get this from your PE)
-            // ~~~~ YOUR CODE STARTS HERE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            return min; // replace this. it's just so the starter code compiles.
-            // ~~~~ YOUR CODE STOPS HERE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            // TODO: Implement the GetValidIntegerInput method
+            // Code pulled from PE - Exception Handling and TryParse
+
+            // declare variables
+            int result;
+            bool success = int.TryParse(GetPromptedInput(prompt), out result);
+            // if the user input is not in the given range or can not be parsed, print a message telling them to enter different input
+            while (result < min || result > max || !success)
+            {
+                success = int.TryParse(
+                    GetPromptedInput(
+                            String.Format("Please enter a valid whole number between {0} and {1}:",
+                            min,
+                            max)
+                        ), out result
+                    );
+            }
+            // once the input is valid, return it
+            return result;
         }
 
         /// <summary>
