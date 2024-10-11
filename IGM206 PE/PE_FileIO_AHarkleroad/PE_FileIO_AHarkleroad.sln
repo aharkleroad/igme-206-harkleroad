@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PE_FileIO_AHarkleroad", "PE_FileIO_AHarkleroad.csproj", "{EAC5E7CF-2116-4D29-B7D8-81DB31F7D81E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EAC5E7CF-2116-4D29-B7D8-81DB31F7D81E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAC5E7CF-2116-4D29-B7D8-81DB31F7D81E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAC5E7CF-2116-4D29-B7D8-81DB31F7D81E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAC5E7CF-2116-4D29-B7D8-81DB31F7D81E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD6D71C8-27E7-486E-88E7-31B2157E724B}
+	EndGlobalSection
+EndGlobal
