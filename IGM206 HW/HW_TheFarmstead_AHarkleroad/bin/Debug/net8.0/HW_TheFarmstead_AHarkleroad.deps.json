@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "HW_TheFarmstead_AHarkleroad/1.0.0": {
+        "runtime": {
+          "HW_TheFarmstead_AHarkleroad.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HW_TheFarmstead_AHarkleroad/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
