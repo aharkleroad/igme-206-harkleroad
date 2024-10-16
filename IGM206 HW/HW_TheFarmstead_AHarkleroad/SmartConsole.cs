@@ -108,6 +108,7 @@ namespace HW_TheFarmstead_AHarkleroad
             // this with what you've learned so far, but I didn't feel like making you worry about
             // anything not related to exceptions or TryParse for this PE.
             // https://learn.microsoft.com/en-us/dotnet/api/system.array.exists?view=net-7.0
+            
             while (!Array.Exists(choices, element => element == result))
             {
                 SmartConsole.PrintWarning("\n\tCommand not recognized.\n");

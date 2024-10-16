@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aizly\\source\\repos\\igme-206-harkleroad\\HW_TheFarmstead_AHarkleroad\\HW_TheFarmstead_AHarkleroad.csproj": {}
+    "C:\\Users\\aizly\\source\\repos\\igme-206-harkleroad\\IGM206 HW\\HW_TheFarmstead_AHarkleroad\\HW_TheFarmstead_AHarkleroad.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aizly\\source\\repos\\igme-206-harkleroad\\HW_TheFarmstead_AHarkleroad\\HW_TheFarmstead_AHarkleroad.csproj": {
+    "C:\\Users\\aizly\\source\\repos\\igme-206-harkleroad\\IGM206 HW\\HW_TheFarmstead_AHarkleroad\\HW_TheFarmstead_AHarkleroad.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aizly\\source\\repos\\igme-206-harkleroad\\HW_TheFarmstead_AHarkleroad\\HW_TheFarmstead_AHarkleroad.csproj",
+        "projectUniqueName": "C:\\Users\\aizly\\source\\repos\\igme-206-harkleroad\\IGM206 HW\\HW_TheFarmstead_AHarkleroad\\HW_TheFarmstead_AHarkleroad.csproj",
         "projectName": "HW_TheFarmstead_AHarkleroad",
-        "projectPath": "C:\\Users\\aizly\\source\\repos\\igme-206-harkleroad\\HW_TheFarmstead_AHarkleroad\\HW_TheFarmstead_AHarkleroad.csproj",
+        "projectPath": "C:\\Users\\aizly\\source\\repos\\igme-206-harkleroad\\IGM206 HW\\HW_TheFarmstead_AHarkleroad\\HW_TheFarmstead_AHarkleroad.csproj",
         "packagesPath": "C:\\Users\\aizly\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aizly\\source\\repos\\igme-206-harkleroad\\HW_TheFarmstead_AHarkleroad\\obj\\",
+        "outputPath": "C:\\Users\\aizly\\source\\repos\\igme-206-harkleroad\\IGM206 HW\\HW_TheFarmstead_AHarkleroad\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
