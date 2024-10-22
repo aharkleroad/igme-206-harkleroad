@@ -6,8 +6,10 @@
  *
  * Known Bugs: None
  * 
- * Other notes: N/A
- * 
+ * Other notes: 
+ * In this program, I will create 3 Critter subtypes that have different calculations that determine their moods
+ * One of these classes will also have a unique method outside of this mood update that affects its stats
+ * In addition, I will add to the CritterManager class so that it can read Critters from and save them to files
  */
 namespace HW6_CritterFarm
 {
@@ -42,6 +44,9 @@ namespace HW6_CritterFarm
             Console.WriteLine("**** Testing Critter sub-classes...");
 
             // TODO: Add code here to test your critter classes!
+            // I will create Critters of different subclasses using SetUpCritters() from CritterManager
+            // and run different Critter methods, like Eat(), Play(), and PassTime() on them
+            // Then I will print each to ensure that everything is updating as it should
         }
 
         /// <summary>
@@ -57,7 +62,7 @@ namespace HW6_CritterFarm
             // TODO: Pass the correct filename to the critter manager constructor
             //       so that it will create a file "critter.txt" in the same folder as
             //       the source code
-            CritterManager manager = new CritterManager("REPLACE THIS STRING");
+            CritterManager manager = new CritterManager("../../../critter.txt");
 
             // ------------------------------------------------------------------
             // Welcome the user

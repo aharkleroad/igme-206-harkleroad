@@ -8,6 +8,14 @@ namespace HW6_CritterFarm
 {
     /// <summary>
     /// TODO: Add your own summary of this class!
+    /// 
+    /// The CritterManager class holds a list of all the current Critters that have been created for the user.
+    /// It is able to take input from a file, create Critter objects, and add them to its list by accessing 
+    /// Critter constructors if a valid Critter can be made with the data provided.
+    /// It can also set up Critters from user input, rather than files.
+    /// Additionally, the class keeps track of which Critter is the "active Critter", ie. which Critter the
+    /// user is interacting with, to update its boredom and hunger stats correctly using Critter properties 
+    /// and methods.
     /// </summary>
     class CritterManager
     {
@@ -155,6 +163,11 @@ namespace HW6_CritterFarm
         /// </summary>
         public void LoadCrittersFromFile()
         {
+            // this method will use a StreamReader to read from a file and create Critter objects.
+            // It will utilize a try/catch block to catch fatal errors and use TryParse and
+            // if/else statements to ensure each line has good data before it is used to instantiate
+            // a Critter object
+            // It will then close the StreamReader if the file has been opened
             // ********************************
             // File name: critters.txt
             // File structure (sample line):
@@ -172,6 +185,10 @@ namespace HW6_CritterFarm
         /// </summary>
         public void SaveCrittersToFile()
         {
+            // This method will use a StreamWriter to write Critter objects to a file in the correct
+            // format.
+            // It will utilize a try/catch block to catch fatal errors
+            // It will then close the StreamWriter if the file has been opened
             // ********************************
             // File name: critters.txt
             // File structure (sample line):

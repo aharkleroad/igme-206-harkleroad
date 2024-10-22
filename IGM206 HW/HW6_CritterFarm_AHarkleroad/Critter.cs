@@ -44,6 +44,11 @@ namespace HW6_CritterFarm
 
     /// <summary>
     /// TODO: Add your own summary of this class!
+    /// 
+    /// The parent class Critter is responsible for establishing Critter's fields and enum type, as 
+    /// well as defining the different actions a user can do with their critter
+    /// in the main menu. All subclasses of Critter define the Critter's starting stats and any unique 
+    /// methods or behaviors, including unique implementations of the abstract method UpdateMood()
     /// </summary>
     abstract class Critter
     {
@@ -154,8 +159,11 @@ namespace HW6_CritterFarm
         /// Updates mood variable based on current happiness level.
         /// Called whenever time passes.
         /// 
-        /// TODO: Add a comment explaining why it makes sense for this method
-        ///         to be abstract, but still defined here in the parent class.
+        /// This method is abstract because each Critter requires different calculations to set their
+        /// original mood and to update it as time passes and the user takes actions. 
+        /// Even though each implementation will be different, all Critters still require a method to 
+        /// update their mood and this function is used in other Critter base class functions, like 
+        /// PassTime(), so it makes sense to implement it here, rather than independantly in each subclass.
         /// </summary>
         protected abstract void UpdateMood();
 
