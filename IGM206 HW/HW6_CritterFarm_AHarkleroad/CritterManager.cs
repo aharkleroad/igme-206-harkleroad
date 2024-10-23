@@ -106,7 +106,7 @@ namespace HW6_CritterFarm
             for (int i = 0; i < numberCritters; i++)
             {
                 string name = SmartConsole.GetPromptedInput("\nEnter critter " + (i + 1) + " name:");
-                string typeString = SmartConsole.GetPromptedInput("What type of critter is "+name+" (Cat, Dog, or Horse)?");
+                string typeString = SmartConsole.GetPromptedInput("What type of critter is "+name+" (Cat, Dog, or Rat)?");
                 CritterType type = CritterType.Cat;
 
                 // Enums work with a TryParse too! :)
@@ -117,7 +117,7 @@ namespace HW6_CritterFarm
                         // to proceed.
                 {
                     SmartConsole.PrintWarning("Sorry, I don't know how to take care of a "+typeString+".\n");
-                    typeString = SmartConsole.GetPromptedInput("What type of critter is " + name + " (Cat, Dog, or Horse)?");
+                    typeString = SmartConsole.GetPromptedInput("What type of critter is " + name + " (Cat, Dog, or Rat)?");
                 }
 
                 // Create the correct type of critter
@@ -125,7 +125,7 @@ namespace HW6_CritterFarm
 
                 // The switch statement cases and constructor calls below need to match YOUR critter types
                 // TODO: Uncomment this once your child classes exist.
-                /*
+                
                 switch (type)
                 {
                     case CritterType.Cat:
@@ -136,8 +136,8 @@ namespace HW6_CritterFarm
                         critterList.Add(new Dog(name));
                         break;
 
-                    case CritterType.Horse:
-                        critterList.Add(new Horse(name));
+                    case CritterType.Rat:
+                        critterList.Add(new Rat(name));
                         break;
 
                     default:
@@ -146,7 +146,6 @@ namespace HW6_CritterFarm
                         i--; // Didn't actually add a critter so go back 1 with our lcv and try again.
                         break;
                 }
-                */
             }
         }
 
@@ -163,7 +162,7 @@ namespace HW6_CritterFarm
         /// </summary>
         public void LoadCrittersFromFile()
         {
-            // this method will use a StreamReader to read from a file and create Critter objects.
+            // This method will use a StreamReader to read from a file and create Critter objects.
             // It will utilize a try/catch block to catch fatal errors and use TryParse and
             // if/else statements to ensure each line has good data before it is used to instantiate
             // a Critter object
@@ -175,6 +174,84 @@ namespace HW6_CritterFarm
             // ********************************
 
             // TODO: Implement LoadCrittersFromFile()
+            // variable declaration for entire method
+            StreamReader reader = null;
+
+            try
+            {
+                // local variable declaration if the file can be opened
+                reader = new StreamReader(filename);
+                string line = reader.ReadLine();
+                int critterCounter = 0;
+                // reads all the lines in the file
+                while (line != null)
+                {
+                    // local variable declaration if there is another line
+                    int hunger;
+                    int boredom;
+                    string[] lineArray = line.Split('|');
+                    CritterType type = CritterType.Cat;
+                    // if the critter type isn't valid, print an error message
+                    if (!Enum.TryParse<CritterType>(lineArray[0], true, out type) 
+                    || !Enum.IsDefined(typeof(CritterType), type))
+                    {
+                        SmartConsole.PrintWarning(String.Format("{0}s aren't supported yet. " +
+                            "Skipping this line: {1}", lineArray[0], line));
+                    }
+
+                    //CritterType type = CritterType.Cat;
+
+                    //// Enums work with a TryParse too! :)
+                    //while (!Enum.TryParse<CritterType>(typeString, true, out type) // true as the middle param tells TryParse to ignore case
+                    //    || !Enum.IsDefined(typeof(CritterType), type))
+                    //    // TryParse accepts ints that aren't actually valid for this
+                    //    // enum. Using IsDefined checks them before allowing the loop
+                    //    // to proceed.
+
+                        // if the data for the critter isn't valid, print an error message
+                    else if (!int.TryParse(lineArray[2], out hunger) 
+                        || !int.TryParse(lineArray[3], out boredom))
+                    {
+                        SmartConsole.PrintWarning(String.Format("Corrupt data. " +
+                            "Skipping this line: {0}", line));
+                    }
+                    // create a critter of the correct type and add it to the list
+                    else
+                    {
+                        Critter critter;
+                        if (type == CritterType.Cat)
+                        {
+                            critter = new Cat(lineArray[1], hunger, boredom);
+                        }
+                        else if (type == CritterType.Dog)
+                        {
+                            critter = new Dog(lineArray[1], hunger, boredom);
+                        }
+                        else
+                        {
+                            critter = new Rat(lineArray[1], hunger, boredom);
+                        }
+                        critterList.Add(critter);
+                        critterCounter++;
+                    }
+                    line = reader.ReadLine();
+                }
+                SmartConsole.PrintSuccess(String.Format("{0} critters loaded successfully.", critterCounter));
+            }
+            // catch exeptions opening or creating the file
+            catch (Exception e)
+            {
+                SmartConsole.PrintError("Critter save file doesn't exist or can't be opened." +
+                    "\n\nYou'll need to set up a new critter farm.");
+                Console.WriteLine();
+                SetupCritters();
+            }
+
+            // closes the file if it has been opened
+            if (reader != null)
+            {
+                reader.Close();
+            }
         }
 
 
@@ -196,6 +273,30 @@ namespace HW6_CritterFarm
             // ********************************
 
             // TODO: Implement SaveCrittersToFile()
+            // variable declaration
+            StreamWriter writer = null;
+
+            // attempts to open and save to a given file
+            try
+            {
+                writer = new StreamWriter(filename);
+                foreach (Critter critter in critterList)
+                {
+                    writer.WriteLine(critter.Type + "|" + critter.Name + "|" + critter.Hunger + "|"
+                        + critter.Boredom);
+                }
+            }
+            // prints an error message if there is an issue opening or accessing it
+            catch (Exception e)
+            {
+                SmartConsole.PrintError("Error saving to file: " + e.Message);
+            }
+
+            // closes the file if it has been opened
+            if (writer != null)
+            {
+                writer.Close();
+            }
         }
 
         // ---------------------------------------------------------------------------------------------------------------
@@ -298,6 +399,16 @@ namespace HW6_CritterFarm
                 // TODO: Update this to call any child specific methods as well.
                 //       For example, in the demo, time passing calls the
                 //       the CauseMischeif method on any cats 25% of the time
+
+                // if the Critter is a Rat, there is a 25% chance it will chew
+                if (c is Rat)
+                {
+                    int randomChance = rng.Next(0, 20);
+                    if (randomChance < 5)
+                    {
+                        ((Rat)c).Chew();
+                    }
+                }
             }
         }
 

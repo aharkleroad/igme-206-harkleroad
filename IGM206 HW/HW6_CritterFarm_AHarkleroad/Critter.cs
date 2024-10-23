@@ -24,7 +24,7 @@ namespace HW6_CritterFarm
     {
         Cat,
         Dog,
-        Horse
+        Rat
     }
 
     /// <summary>

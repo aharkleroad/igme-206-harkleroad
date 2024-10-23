@@ -31,8 +31,8 @@ namespace HW6_CritterFarm
             Console.ForegroundColor = ConsoleColor.White;
 
             // TODO: Uncomment for which thing you want to test.
-            TestCritters();
-            //RunCritterFarm();
+            //TestCritters();
+            RunCritterFarm();
         }
 
         /// <summary>
@@ -47,6 +47,44 @@ namespace HW6_CritterFarm
             // I will create Critters of different subclasses using SetUpCritters() from CritterManager
             // and run different Critter methods, like Eat(), Play(), and PassTime() on them
             // Then I will print each to ensure that everything is updating as it should
+
+            // declares variables and adds Critters to the critter list
+            List<Critter> critterList = new List<Critter>();
+            critterList.Add(new Cat("Shilo"));
+            critterList.Add(new Cat("Mittens", 0, 2));
+            critterList.Add(new Dog("Spot"));
+            critterList.Add(new Dog("Ruff", 0, 2));
+            critterList.Add(new Rat("Peter"));
+            critterList.Add(new Rat("Frankie", 0, 2));
+
+            // prints each critter in the list
+            foreach (Critter critter in critterList)
+            {
+                Console.WriteLine(critter.ToString());
+            }
+            Console.WriteLine();
+
+            // has each critter eat, play, and pass time
+            // if the critter is a rat, they also chew
+            for (int i = 0; i < critterList.Count; i++)
+            {
+                critterList[i].Eat();
+                critterList[i].Play();
+                critterList[i].PassTime();
+
+                if (critterList[i] is Rat)
+                {
+                    ((Rat)critterList[i]).Chew();
+                }
+                Console.WriteLine();
+            }
+
+            // print each critter again
+            foreach (Critter critter in critterList)
+            {
+                Console.WriteLine(critter.ToString());
+            }
+            Console.WriteLine();
         }
 
         /// <summary>
