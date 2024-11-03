@@ -1,0 +1,25 @@
+﻿Release Notes﻿
+Game Project: Exercise 3: 2D Clock
+Creator: Aizlynn Harkleroad
+Version: 1.0
+Date: 11/1/24
+
+
+New features
+* Two clock hands and twelve numbers added to the clock face
+* Clock manager added to create the numbers at instantiation
+* The clock hands complete one rotation around the clock face every minute
+   * One uses delta time and the other does not
+﻿
+Fixes
+* ﻿N/A ﻿
+﻿
+Improvements (of existing features)
+* ﻿Background color changed
+
+
+Known Bugs
+* ﻿N/A
+
+
+﻿
