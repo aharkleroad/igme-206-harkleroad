@@ -1,0 +1,28 @@
+﻿Release Notes
+﻿
+Game Project: Exercise 4
+Creator: Aizlynn Harkleroad
+Version: 1.0
+Date: 11/9/24
+
+
+New features
+* ﻿Added a vehicle game object that is controlled by player input (wasd controls)
+   * The vehicle moves and the sprite turns towards the direction it is moving
+   * It also wraps around the screen if half or more of the sprite exits the game view
+﻿
+Fixes
+* ﻿N/A
+﻿
+Improvements (of existing features)
+* Changed the starting direction for the vehicle from (1, 0, 0) to (0, 0, 0)
+   * Prevents the car from driving right by itself immediately
+
+
+
+
+Known Bugs
+* ﻿Vehicle returns to facing downwards while not in motion
+
+
+﻿
