@@ -1,0 +1,27 @@
+﻿Release Notes
+﻿
+Game Project: Exercise 5
+Creator: Aizlynn Harkleroad
+Version: 1.0
+Date: 11/16/24
+
+
+New features
+* ﻿Added new vehicle game objects that the player can interact with
+* Added collision detection that displays when a player collides with a different vehicle
+* Created a toggle between two different collision detection methods based on use input
+   * Takes a left mouse click
+   * Displays what collision method is being used to the user
+﻿
+Fixes
+* ﻿N/A
+﻿
+Improvements (of existing features)
+* N/A
+
+
+Known Bugs
+* ﻿Vehicle returns to facing downwards while not in motion
+
+
+﻿

@@ -11,12 +11,19 @@ public class InputController : MonoBehaviour
     // variable declaration
     private Vector3 inputDirection = new Vector3(0, 0, 0);
     private MovementController myMovementController;
+    private CollisionManager myCollisionManager;
 
     // sets the direction vector and applies it to the movement controller for the next frame
     public void OnMove(InputAction.CallbackContext context)
     {
         inputDirection = context.ReadValue<Vector2>();
         myMovementController.SetDirection(inputDirection);
+    }
+
+    // takes user input and changes the collision method with it
+    public void OnClick(InputAction.CallbackContext context)
+    {
+        myCollisionManager.ChangeCollision();
     }
 
     // Start is called before the first frame update
