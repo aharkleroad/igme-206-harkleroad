@@ -11,8 +11,9 @@
 
 -   Camera Orientation: Topdown view
 -   Camera Movement: Fixed camera, no movement, player will collide with the edge of the screen (no wrap around to the other side)
+    - (If the player goes off the right side of the screen, they will lose)
 -   Player Health: Player health will take the form of individual lives rather than a health bar
--   End Condition: The level ends when the player loses all their lives
+-   End Condition: The level ends when the player loses all their lives or exits the right side of the screen
 -   Scoring: The player earns points by destroying enemies and obstacles
 
 ### Game Description
@@ -40,7 +41,9 @@ like other planes, birds, etc.
 
 ## Known Issues
 
-None
+-  Player movement is way too slow, patched at the moment by multiplying the acceleration by 30 in the PhysicsSHMUP script
+    -  Not affected by changing the player's mass
+-  The sprite rotation is wrong by 270 degrees
 
 ### Requirements not completed
 
