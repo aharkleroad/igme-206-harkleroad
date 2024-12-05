@@ -1,30 +1,44 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.UI;
 
 public class PhysicsObject : MonoBehaviour
 {
     // field declaration
-    private bool isColliding;
-    public GameObject referernceObject;
-    public GameObject collidable;
-    private SpriteRenderer spriteRendererReference;
-    private SpriteRenderer spriteRendererCollidable;
-    private Vector3 position;
+    private Vector3 position = new Vector3(0, 0, 0);
     private Vector3 direction;
     private Vector3 velocity;
     private Vector3 acceleration;
-    private Vector3 gravity;
+    private Vector3 gravity = new Vector3(0, -1, 0);
     public float mass;
-    private float radius;
     public bool isFrictionApplied;
     public bool isGravityApplied;
     public float coefficentOfFriction;
     public float strengthOfGravity;
     public float maxSpeed;
+    protected Transform transform;
+
+    public Vector3 Direction
+    {
+        get {return direction;}
+        set {direction = value;}
+    }
+
+    public Vector3 Velocity
+    {
+        get {return velocity;}
+    }
+
+    public Vector3 Position
+    {
+        get {return position;}
+        set {position = value;}
+    }
+
+    public void ApplyForce(Vector3 force)
+    {
+        acceleration = force / mass;
+    }
 
     // applies frictional force to GameObjects
     public void ApplyFriction()
@@ -35,18 +49,13 @@ public class PhysicsObject : MonoBehaviour
         // calculates magnitude of the force
         friction *= coefficentOfFriction;
         // adjusts acceleration based on calculated force
-        ApplyForce(friction);
+        acceleration += friction / mass;
     }
 
     // applies a given gravitational force to GameObjects
     public void ApplyGravity()
     {
         acceleration += gravity * strengthOfGravity;
-    }
-
-    public void ApplyForce(Vector3 force)
-    {
-        acceleration += force / mass;
     }
 
     // has the monsters bounce when they begin to exit the game window
@@ -66,34 +75,11 @@ public class PhysicsObject : MonoBehaviour
         }
     }
 
-    public bool CircleCollision()
-    {
-        // checks if the distance between the player and another sprite is larger than the combined radii of their bounding circles (collision occurring)
-        // colors both sprites red if they are
-         Debug.Log("Is being called");
-        if (Math.Pow(spriteRendererReference.bounds.center.x - spriteRendererCollidable.bounds.center.x, 2)  +
-            Math.Pow(spriteRendererReference.bounds.center.y - spriteRendererCollidable.bounds.center.y, 2) <
-            spriteRendererReference.bounds.extents.magnitude + spriteRendererCollidable.bounds.extents.magnitude)
-        {
-            isColliding = true;
-             Debug.Log("Is true");
-        }
-        // otherwise ensures that the other sprite is colored normally
-        // does not reset player sprite because it may be colliding with another object
-        else
-        {
-            isColliding = false;
-             Debug.Log("Is false");
-        }
-        return isColliding;
-    }
-
     // Start is called before the first frame update
     void Start()
     {
-        gravity = new Vector3(0, -1, 0);
-        spriteRendererReference = referernceObject.GetComponent<SpriteRenderer>();
-        spriteRendererCollidable = collidable.GetComponent<SpriteRenderer>();
+        transform = GetComponent<Transform>();
+        direction = Random.insideUnitCircle.normalized;
     }
 
     // Update is called once per frame
@@ -111,10 +97,10 @@ public class PhysicsObject : MonoBehaviour
         }
         // adjusts velocity
         velocity += acceleration * Time.deltaTime;
-        velocity = Vector3.ClampMagnitude(velocity, maxSpeed);        // ensures the monsters bounce off the edges of the screen iif they encounter them
-        Bounce();
+        velocity = Vector3.ClampMagnitude(velocity, maxSpeed);
         // adjusts position and direction accordingly
         position += velocity * Time.deltaTime;
+        Debug.Log(velocity);
         direction = velocity.normalized;
         transform.rotation = Quaternion.LookRotation(Vector3.back, direction);
         position.z = 0f;
