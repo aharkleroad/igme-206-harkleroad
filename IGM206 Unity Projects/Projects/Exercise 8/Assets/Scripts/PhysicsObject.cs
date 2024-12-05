@@ -26,6 +26,26 @@ public class PhysicsObject : MonoBehaviour
     public float strengthOfGravity;
     public float maxSpeed;
 
+    // getter and setter for direction
+    public Vector3 Direction
+    {
+        get {return direction;}
+        set {direction = value;}
+    }
+
+    // getter for velocity
+    public Vector3 Velocity
+    {
+        get {return velocity;}
+    }
+
+    // getter and setter for position
+    public Vector3 Position
+    {
+        get {return position;}
+        set {position = value;}
+    }
+
     // applies frictional force to GameObjects
     public void ApplyFriction()
     {
@@ -66,10 +86,11 @@ public class PhysicsObject : MonoBehaviour
         }
     }
 
+    // checks if two sprites are colliding using bounding circle collision checking
     public bool CircleCollision()
     {
-        // checks if the distance between the player and another sprite is larger than the combined radii of their bounding circles (collision occurring)
-        // colors both sprites red if they are
+        // checks if the distance between the player and another sprite is smaller than the combined radii of their bounding circles 
+        // (collision occurring if so)
          Debug.Log("Is being called");
         if (Math.Pow(spriteRendererReference.bounds.center.x - spriteRendererCollidable.bounds.center.x, 2)  +
             Math.Pow(spriteRendererReference.bounds.center.y - spriteRendererCollidable.bounds.center.y, 2) <
@@ -78,8 +99,6 @@ public class PhysicsObject : MonoBehaviour
             isColliding = true;
              Debug.Log("Is true");
         }
-        // otherwise ensures that the other sprite is colored normally
-        // does not reset player sprite because it may be colliding with another object
         else
         {
             isColliding = false;
@@ -89,14 +108,15 @@ public class PhysicsObject : MonoBehaviour
     }
 
     // Start is called before the first frame update
+    // gets SpriteRenderer components for collision
     void Start()
     {
-        gravity = new Vector3(0, -1, 0);
         spriteRendererReference = referernceObject.GetComponent<SpriteRenderer>();
         spriteRendererCollidable = collidable.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
+    // applies extra forces, if applicable, and finds velocity, etc, based on acceleration
     void Update()
     {
         // applies gravity if enabled
@@ -111,9 +131,10 @@ public class PhysicsObject : MonoBehaviour
         }
         // adjusts velocity
         velocity += acceleration * Time.deltaTime;
-        velocity = Vector3.ClampMagnitude(velocity, maxSpeed);        // ensures the monsters bounce off the edges of the screen iif they encounter them
+        velocity = Vector3.ClampMagnitude(velocity, maxSpeed);        
+        // ensures the monsters bounce off the edges of the screen if they encounter them
         Bounce();
-        // adjusts position and direction accordingly
+        // adjusts position and direction according to velocity
         position += velocity * Time.deltaTime;
         direction = velocity.normalized;
         transform.rotation = Quaternion.LookRotation(Vector3.back, direction);

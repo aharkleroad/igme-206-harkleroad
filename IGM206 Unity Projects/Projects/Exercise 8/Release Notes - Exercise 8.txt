@@ -1,0 +1,27 @@
+﻿Release Notes
+﻿
+Game Project: Exercise 8
+Creator: Aizlynn Harkleroad
+Version: 1.0
+Date: 12/5/24
+
+
+New features
+* ﻿Created a seeker and fleer prefab ﻿
+* Created Seeking and Fleeing functions
+* Added an Agent class with two subclasses, Seeker and Fleerer
+   * They use the Seek and Flee functions
+* Attached the prefabs to the subclasses so they chase each other around the screen
+   * Fleer teleports when caught
+* Removed mouse tracking
+* Added collision detection
+﻿
+Fixes
+* ﻿N/A
+﻿
+Improvements (of existing features)
+* N/A
+
+Known Bugs
+* ﻿None
+﻿

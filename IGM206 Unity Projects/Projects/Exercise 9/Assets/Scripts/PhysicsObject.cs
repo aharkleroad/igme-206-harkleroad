@@ -100,7 +100,6 @@ public class PhysicsObject : MonoBehaviour
         velocity = Vector3.ClampMagnitude(velocity, maxSpeed);
         // adjusts position and direction accordingly
         position += velocity * Time.deltaTime;
-        Debug.Log(velocity);
         direction = velocity.normalized;
         transform.rotation = Quaternion.LookRotation(Vector3.back, direction);
         position.z = 0f;

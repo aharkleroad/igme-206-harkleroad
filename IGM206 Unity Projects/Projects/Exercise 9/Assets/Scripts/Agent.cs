@@ -18,7 +18,9 @@ public abstract class Agent : MonoBehaviour
 
     public void Seek(Vector3 desiredPosition, float weight = 1f)
     {
+        Debug.Log("Seeking");
         desiredVelocity = Vector3.Normalize(desiredPosition - physics.Position) * maxSpeed;
+        Debug.Log(desiredVelocity);
         Vector3 seekingForce = desiredVelocity - physics.Velocity;
         seekingForce = Vector3.ClampMagnitude(seekingForce, maxForce);
         totalForce += seekingForce * weight;
@@ -34,9 +36,12 @@ public abstract class Agent : MonoBehaviour
 
     protected void Wander(float weight = 1f)
     {
+        Debug.Log("Wandering");
         float maxWanderChange = maxWanderChangePerSecond * Time.deltaTime;
         wanderAngle += Random.Range(-maxWanderChange, maxWanderChange + 1);
+        Debug.Log(wanderAngle);
         Vector3 wanderTarget = (Quaternion.Euler(0, 0, wanderAngle) * physics.Direction.normalized) + physics.Position;
+        Debug.Log(physics.Direction);
         Seek(wanderTarget, weight);
     }
 
@@ -68,8 +73,8 @@ public abstract class Agent : MonoBehaviour
         totalForce = Vector3.ClampMagnitude(totalForce, maxForce);
         physics.ApplyForce(totalForce);
         // objects rotate towards the direction they travel
-        // physics.Direction = Vector3.Normalize(physics.Velocity);
-        // transform.rotation = Quaternion.LookRotation(Vector3.back, physics.Direction);
+        physics.Direction = Vector3.Normalize(physics.Velocity);
+        transform.rotation = Quaternion.LookRotation(Vector3.back, physics.Direction);
         // reduce force to zero to calculate again next frame
         totalForce = Vector3.zero;
     }

@@ -224,10 +224,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4d22308d3fa24b41a021162bca30999, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 10
+  maxSpeed: 8
   maxForce: 10
-  position: {x: 0, y: 0, z: 0}
-  seeking: {fileID: 1918689061}
+  agent: {fileID: 1918689061}
 --- !u!1001 &1550215969
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -435,8 +434,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 6
   maxForce: 10
-  position: {x: 0, y: 0, z: 0}
-  fleeing: {fileID: 1406304048}
+  agent: {fileID: 1406304048}
 --- !u!1001 &2233255550915656235
 PrefabInstance:
   m_ObjectHideFlags: 0

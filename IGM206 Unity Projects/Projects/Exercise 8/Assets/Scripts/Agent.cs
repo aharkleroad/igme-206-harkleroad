@@ -4,31 +4,37 @@ using UnityEngine;
 
 public abstract class Agent : MonoBehaviour
 {
+    // field declaration
     public float maxSpeed;
     public float maxForce;
-    public Vector3 position;
-    protected Vector3 direction;
-    protected Vector3 velocity;
+    private Vector3 totalForce = Vector3.zero;
     protected Vector3 desiredVelocity;
-    protected Vector3 acceleration;
     protected PhysicsObject physics;
+    public Agent agent;
 
+    // abstract method for agent subclasses
     public abstract void CalcSteeringForces();
 
-    public Vector3 Seek(Vector3 desiredPosition)
+    // calculates and applies a seeking force towards a target position
+    public void Seek(Vector3 desiredPosition)
     {
-        desiredVelocity = Vector3.Normalize(desiredPosition - position) * maxSpeed;
-        Vector3 seekingForce = desiredVelocity - velocity;
+        // calculate seeking force based on desired velocity and bounded by max force
+        desiredVelocity = Vector3.Normalize(desiredPosition - physics.Position) * maxSpeed;
+        Vector3 seekingForce = desiredVelocity - physics.Velocity;
         seekingForce = Vector3.ClampMagnitude(seekingForce, maxForce);
-        return seekingForce;
+        // adds seeking force to total force in case other forces are applied
+        totalForce += seekingForce;
     }
 
-    public Vector3 Flee(Vector3 fleeingPosition)
+    // applies a fleeing force away from a given position
+    public void Flee(Vector3 fleeingPosition)
     {
-        desiredVelocity = Vector3.Normalize(position - fleeingPosition) * maxSpeed;
-        Vector3 fleeingForce = desiredVelocity - velocity;
+        // calculate fleeing force based on desired velocity and bounded by max force
+        desiredVelocity = Vector3.Normalize(physics.Position - fleeingPosition) * maxSpeed;
+        Vector3 fleeingForce = desiredVelocity - physics.Velocity;
         fleeingForce = Vector3.ClampMagnitude(fleeingForce, maxForce);
-        return fleeingForce;
+        // adds fleeing force to total force in case other forces are applied
+        totalForce += fleeingForce;
     }
 
     // Start is called before the first frame update
@@ -40,10 +46,11 @@ public abstract class Agent : MonoBehaviour
     // Update is called once per frame
     protected virtual void Update()
     {
-        Debug.Log("In update");
+        // calculates the steering force for each agent
         CalcSteeringForces();
-        // objects rotate towards the direction they travel
-        Vector3 direction = Vector3.Normalize(velocity);
-        transform.rotation = Quaternion.LookRotation(Vector3.back, direction);
+        totalForce = Vector3.ClampMagnitude(totalForce, maxForce);
+        // apply steering force to the agent
+        physics.ApplyForce(totalForce);
+        totalForce = Vector3.zero;
     }
 }

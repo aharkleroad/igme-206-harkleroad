@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class Seeker : Agent
 {
-    public Fleer seeking;
-    private Vector3 steeringForce;
+    // field declaration
+    protected PhysicsObject seekingPhysics;
 
+    // seeks towards the fleeing agent's position
     public override void CalcSteeringForces()
     {
-        steeringForce = Seek(seeking.position);
-        physics.ApplyForce(steeringForce);
+        Seek(seekingPhysics.Position);
     }
 
     // Start is called before the first frame update
     protected override void Start()
     {
         base.Start();
-        seeking = GetComponent<Fleer>();
+        seekingPhysics = agent.GetComponent<PhysicsObject>();
     }
 
     // Update is called once per frame

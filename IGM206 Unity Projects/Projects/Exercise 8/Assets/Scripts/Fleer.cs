@@ -4,20 +4,21 @@ using UnityEngine;
 
 public class Fleer : Agent
 {
-    public Seeker fleeing;
-    private Vector3 steeringForce;
+    // field declaration
+    protected PhysicsObject fleeingPhysics;
 
+    // flees from the seeker and teleports if caught
     public override void CalcSteeringForces()
     {
-         Debug.Log("CalcSteering");
-        steeringForce = Flee(fleeing.position);
-        physics.ApplyForce(steeringForce);
+        // flees
+        Flee(fleeingPhysics.Position);
+        // transports to a random position when a collision occurs
         if (physics.CircleCollision())
         {
-            Debug.Log("Is colliding");
+            // generates random coordinates in bounds
             float xCoordinate = Random.Range(-7, 8);
             float yCoordinate = Random.Range(-4, 5);
-            position = new Vector3(xCoordinate, yCoordinate, 0);
+            physics.Position = new Vector3(xCoordinate, yCoordinate, 0);
         }
     }
 
@@ -25,9 +26,7 @@ public class Fleer : Agent
     protected override void Start()
     {
         base.Start();
-        fleeing = GetComponent<Seeker>();
-        //physics = GetComponent<PhysicsObject>();
-        //Debug.Log("Components gotten");
+        fleeingPhysics = agent.GetComponent<PhysicsObject>();
     }
 
     // Update is called once per frame
