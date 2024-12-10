@@ -9,92 +9,50 @@ public class PhysicsObject : MonoBehaviour
     private Vector3 direction;
     private Vector3 velocity;
     private Vector3 acceleration;
-    private Vector3 gravity = new Vector3(0, -1, 0);
     public float mass;
-    public bool isFrictionApplied;
-    public bool isGravityApplied;
-    public float coefficentOfFriction;
-    public float strengthOfGravity;
     public float maxSpeed;
     protected Transform transform;
 
+    // direction getter and setter
     public Vector3 Direction
     {
         get {return direction;}
         set {direction = value;}
     }
 
+    // velocity getter
     public Vector3 Velocity
     {
         get {return velocity;}
     }
 
+    // position getter and setter
     public Vector3 Position
     {
-        get {return position;}
+        get {return transform.position;}
         set {position = value;}
     }
 
+    // calculate acceleration based on an object's mass and the force applied
     public void ApplyForce(Vector3 force)
     {
         acceleration = force / mass;
-    }
-
-    // applies frictional force to GameObjects
-    public void ApplyFriction()
-    {
-        // direction of friction opposes velocity
-        Vector3 friction = -velocity;
-        friction.Normalize();
-        // calculates magnitude of the force
-        friction *= coefficentOfFriction;
-        // adjusts acceleration based on calculated force
-        acceleration += friction / mass;
-    }
-
-    // applies a given gravitational force to GameObjects
-    public void ApplyGravity()
-    {
-        acceleration += gravity * strengthOfGravity;
-    }
-
-    // has the monsters bounce when they begin to exit the game window
-    public void Bounce()
-    {
-        // reverses x velocity if they hit the left or right of the game window
-        if (position.x > 8f || position.x < -8f)
-        {
-            position.x = 8 * Mathf.Sign(position.x);
-            velocity.x = -velocity.x;
-        }
-        // reverses y velocity if they hit the bottom or top of the game window
-        else if (position.y > 5f || position.y < -5f)
-        {
-            position.y = 5 * Mathf.Sign(position.y);
-            velocity.y = -velocity.y;
-        }
     }
 
     // Start is called before the first frame update
     void Start()
     {
         transform = GetComponent<Transform>();
-        direction = Random.insideUnitCircle.normalized;
+        // assign each object a random starting direction
+        float randomStartAngle = Random.Range(0, Mathf.PI * 2);
+        direction.x = Mathf.Cos(randomStartAngle * Mathf.Deg2Rad);
+        direction.y = Mathf.Sin(randomStartAngle * Mathf.Deg2Rad);
+        direction = direction.normalized;
     }
 
     // Update is called once per frame
     void Update()
     {
-        // applies gravity if enabled
-        if (isGravityApplied)
-        {
-            ApplyGravity();
-        }
-        // applies friction if enabled
-        if (isFrictionApplied)
-        {
-            ApplyFriction();
-        }
         // adjusts velocity
         velocity += acceleration * Time.deltaTime;
         velocity = Vector3.ClampMagnitude(velocity, maxSpeed);

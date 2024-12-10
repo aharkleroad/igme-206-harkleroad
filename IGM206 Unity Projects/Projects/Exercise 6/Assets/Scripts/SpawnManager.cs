@@ -23,22 +23,22 @@ public class SpawnManager : Singleton<SpawnManager>
 
     public void Spawn()
     {
-        Debug.Log("in spawn");
         // field declaration
         float xPosition;
         float yPosition;
         GameObject creature;
+        // gets rid of previous creatures
+        CleanUp();
         // randomly generates the number of creatures to spawn (between 10 and 20)
         int numberOfCreatures = Random.Range(10, 21);
         Debug.Log("number creatures decided");
         // creates the creatures and adds them to a list so they can be tracked
         for(int i = 0; i < numberOfCreatures; i++)
         {
-            xPosition = Gaussian(0f, 2f);
-            yPosition = Gaussian(0f, 1f);
+            xPosition = Gaussian(0f, 3.5f);
+            yPosition = Gaussian(0f, 1.25f);
             creature = SpawnCreature();
             GameObject creatureInstantiated = Instantiate(creature, new Vector3(xPosition, yPosition, 0f), Quaternion.identity);
-            Debug.Log("creature instantiated");
             creatureList.Add(creatureInstantiated);
         }
     }
@@ -140,9 +140,10 @@ public class SpawnManager : Singleton<SpawnManager>
     public void CleanUp()
     {
         // destroys each creature on the screen (stored in list)
-        foreach (GameObject creature in creatureList)
+        for (int i = 0; i < creatureList.Count; i++)
         {
-            Destroy(creature);
+            Destroy(creatureList[0]);
+            Debug.Log("Destroyed " + i);
         }
         // clears list before new creatures are added
         creatureList.Clear();

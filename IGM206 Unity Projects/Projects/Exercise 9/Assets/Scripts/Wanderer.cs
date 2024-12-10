@@ -4,26 +4,16 @@ using UnityEngine;
 
 public class Wanderer : Agent
 {
+    // field declaration
     [Min(1f)]
     public float wanderWeight = 1f;
     [Min(1f)]
     public float stayInBoundsWeight = 3f;
 
+    // find the steering forces applied to the wander agent
     protected override void CalcSteeringForces()
     {
-        Wander(wanderWeight);
+        Wander(wanderWeight, 1f);
         StayInBounds(stayInBoundsWeight);
-    }
-
-    // Start is called before the first frame update
-    protected override void Start()
-    {
-        base.Start();
-    }
-
-    // Update is called once per frame
-    protected override void Update()
-    {
-        base.Update();
     }
 }

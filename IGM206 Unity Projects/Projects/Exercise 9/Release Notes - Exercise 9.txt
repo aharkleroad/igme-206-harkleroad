@@ -1,0 +1,24 @@
+﻿Release Notes
+﻿
+Game Project: Exercise 9
+Creator: Aizlynn Harkleroad
+Version: 1.0
+Date: 12/7/24
+
+
+New features
+* ﻿Created a Wanderer ﻿prefab with an associated wanderer script
+* Created a Wanderer function in Agent and a Wanderer class that calls it
+  * Makes the wanderers walk around the screen aimlessly
+* Added a Stay in Bounds function that keeps the agents on screen with forces
+﻿
+Fixes
+* ﻿N/A
+﻿
+Improvements (of existing features)
+* ﻿N/A
+
+
+Known Bugs
+* ﻿None
+﻿
