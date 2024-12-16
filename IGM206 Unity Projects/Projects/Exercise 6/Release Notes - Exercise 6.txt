@@ -1,0 +1,25 @@
+﻿Release Notes
+﻿
+Game Project: Exercise 6
+Creator: Aizlynn Harkleroad
+Version: 1.0
+Date: 12/16/24
+
+
+New features
+* Created a creature prefab that can be assigned a variety of sprites and colors
+* Wrote a script to randomly generate the number, position, color, and type of creatures using
+  various random distibution methods
+* Linked this script to the spawn button so that pushing it generates different creatures and 
+  deletes any creatures from the previous generation
+﻿
+Fixes
+* ﻿N/A
+﻿
+Improvements (of existing features)
+* ﻿N/A
+
+
+Known Bugs
+* ﻿None
+﻿

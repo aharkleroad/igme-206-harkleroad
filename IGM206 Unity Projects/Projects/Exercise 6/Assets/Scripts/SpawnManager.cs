@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-// using Random = UnityEngine.Random;
 
 public class SpawnManager : Singleton<SpawnManager>
 {
@@ -21,6 +20,7 @@ public class SpawnManager : Singleton<SpawnManager>
     // (Optional) Prevent non-singleton constructor use.
     protected SpawnManager() { }
 
+    // instantiates a random number of creatures
     public void Spawn()
     {
         // field declaration
@@ -43,6 +43,7 @@ public class SpawnManager : Singleton<SpawnManager>
         }
     }
 
+    // generates a random value according to a gaussian distribution
     private float Gaussian(float mean, float stdDev)
     {
         float val1 = Random.Range(0f, 1f);
@@ -139,11 +140,11 @@ public class SpawnManager : Singleton<SpawnManager>
     // removes all creatures from the screen and list so new ones can be spawned
     public void CleanUp()
     {
+        int listLength = creatureList.Count;
         // destroys each creature on the screen (stored in list)
-        for (int i = 0; i < creatureList.Count; i++)
+        for (int i = 0; i < listLength; i++)
         {
-            Destroy(creatureList[0]);
-            Debug.Log("Destroyed " + i);
+            Destroy(creatureList[i]);
         }
         // clears list before new creatures are added
         creatureList.Clear();

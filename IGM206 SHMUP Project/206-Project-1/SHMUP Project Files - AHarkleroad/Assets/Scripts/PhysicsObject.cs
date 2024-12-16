@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PhysicsSHMUP : MonoBehaviour
+public class PhysicsObject : MonoBehaviour
 {
     // field declaration
     private Vector3 position;
@@ -10,10 +10,33 @@ public class PhysicsSHMUP : MonoBehaviour
     private Vector3 velocity;
     private Vector3 acceleration;
     private Vector3 gravity;
+    private Vector3 force;
     public float mass;
-    public bool isGravityApplied;
     public float strengthOfGravity;
     public float maxSpeed;
+
+    public Vector3 Position
+    {
+        get {return position;}
+        set {position = value;}
+    }
+
+    public Vector3 Direction
+    {
+        get {return direction;}
+        set {direction = value;}
+    }
+
+    public Vector3 Velocity
+    {
+        get {return velocity;}
+        set {velocity = value;}
+    }
+
+    public void ApplyForce(Vector3 force)
+    {
+        acceleration = force / mass;
+    }
 
     // applies a given gravitational force to GameObjects
     public void ApplyGravity()
@@ -21,8 +44,7 @@ public class PhysicsSHMUP : MonoBehaviour
         acceleration += gravity * strengthOfGravity;
     }
 
-    // has the plane bounce when it begins to exit the game window
-    public void Bounce()
+   public void Bounce()
     {
         // reverses x velocity if they hit the left of the game window
         // can drift off the right end as loose condition
@@ -39,38 +61,24 @@ public class PhysicsSHMUP : MonoBehaviour
         }
     }
 
-    // allows player input to change the acceleration of the plane
-    public void ChangeAcceleration(Vector3 playerInput)
-    {
-        acceleration += playerInput;
-    }
-
     // Start is called before the first frame update
     void Start()
     {
         gravity = new Vector3(0, -1, 0);
-        position = new Vector3(6, 0, 0);
     }
 
     // Update is called once per frame
     void Update()
     {
-        // applies gravity if enabled
-        if (isGravityApplied)
-        {
-            ApplyGravity();
-        }
         // adjusts velocity
-        velocity += acceleration * 30 * Time.deltaTime;
+        velocity += acceleration * Time.deltaTime;
         velocity = Vector3.ClampMagnitude(velocity, maxSpeed);
-        // ensures the monsters bounce off the edges of the screen if they encounter them
         Bounce();
         // adjusts position and direction accordingly
         position += velocity * Time.deltaTime;
         direction = velocity.normalized;
         position.z = 0f;
         transform.position = position;
-        transform.rotation = Quaternion.LookRotation(Vector3.back, direction);
         // resets acceleration calculation
         acceleration = Vector3.zero;
     }
