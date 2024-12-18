@@ -17,18 +17,14 @@ public class EnemyPlane : Enemy
     {
         GameObject bullet = Instantiate(planeProjectilePrefab, physics.Position, Quaternion.identity);
         enemyProjectile.enemyProjectileList.Add(bullet);
+        bullet.GetComponent<EnemyProjectiles>().player = this.player;
     }
 
     // Start is called before the first frame update
-    void Start()
+    protected override void Start()
     {
+        base.Start();
         desiredLocation = new Vector3(-10f, physics.Position.y, 0f);
         enemyProjectile = GetComponent<EnemyProjectiles>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

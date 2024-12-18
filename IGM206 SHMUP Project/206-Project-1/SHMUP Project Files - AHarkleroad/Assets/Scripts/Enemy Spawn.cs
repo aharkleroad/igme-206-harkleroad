@@ -20,21 +20,26 @@ public class EnemySpawn : MonoBehaviour
     public Enemy planePrefab;
     public Enemy pigeonPrefab;
     public List<Enemy> enemyList = new List<Enemy>();
-    private float xPosition = -8f;
+    private float xPosition = -7.5f;
     private float yPosition;
+    protected GameObject player;
 
+    // spawns a plane at a randomly generated y position in the window
     public void SpawnEnemyPlane()
     {
         yPosition = Random.Range(-4, 5);
         Enemy plane = Instantiate(planePrefab, new Vector3(xPosition, yPosition, 0f), Quaternion.identity);
+        plane.GetComponent<EnemyPlane>().player = this.player;
         enemyList.Add(plane);
     }
 
+    // spawns a pigeon at a randomly generated y position in the window
     public void SpawnPigeon()
     {
         // pigeons only spawn at the top of the screen
         yPosition = Random.Range(1, 5);
         Enemy pigeon = Instantiate(pigeonPrefab, new Vector3(xPosition, yPosition, 0f), Quaternion.identity);
+        pigeon.GetComponent<Pigeon>().player = this.player;
         enemyList.Add(pigeon);
     }
 
@@ -72,7 +77,7 @@ public class EnemySpawn : MonoBehaviour
         {
             enemyTypeDeterminer = Random.Range(1, 101);
             // spawns planes at the given rate and pigeons all other times
-            if (enemiesSpawnPerSecond <= rateOfPlanes)
+            if (enemyTypeDeterminer <= rateOfPlanes)
             {
                 SpawnEnemyPlane();
             }

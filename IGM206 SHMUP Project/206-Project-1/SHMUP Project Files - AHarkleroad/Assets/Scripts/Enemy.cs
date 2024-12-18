@@ -5,17 +5,18 @@ using UnityEngine;
 public abstract class Enemy : MonoBehaviour
 {
     public int health;
+    public int damage;
     public float maxSpeed;
     public float maxForce;
     public Vector3 position;
-    protected float collisionDamage;
-    protected float projectileDamage;
     public float timeBetweenShots;
     private float shootTimer;
     protected Vector3 totalForce;
     protected Vector3 desiredLocation;
     protected Vector3 desiredVelocity;
     protected PhysicsObject physics;
+    public GameObject player;
+    public GameObject gameManager;
 
     public Vector3 DesiredLocation
     {
@@ -39,6 +40,11 @@ public abstract class Enemy : MonoBehaviour
         }
     }
 
+    protected void TakeDamage(int damageTaken)
+    {
+        health -= damageTaken;
+    }
+
     public void Seek(Vector3 desiredPosition)
     {
         // calculate desired velocity
@@ -51,7 +57,7 @@ public abstract class Enemy : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    void Start()
+    protected virtual void Start()
     {
         physics = GetComponent<PhysicsObject>();
         position = physics.Position;

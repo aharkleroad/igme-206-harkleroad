@@ -15,24 +15,28 @@ public class PhysicsObject : MonoBehaviour
     public float strengthOfGravity;
     public float maxSpeed;
 
+    // gets and sets object's position
     public Vector3 Position
     {
         get {return position;}
         set {position = value;}
     }
 
+    // gets and sets object's direction
     public Vector3 Direction
     {
         get {return direction;}
         set {direction = value;}
     }
 
+    // gets and sets object's velocity
     public Vector3 Velocity
     {
         get {return velocity;}
         set {velocity = value;}
     }
 
+    // applies a force to an object's acceleration
     public void ApplyForce(Vector3 force)
     {
         acceleration = force / mass;
@@ -44,27 +48,11 @@ public class PhysicsObject : MonoBehaviour
         acceleration += gravity * strengthOfGravity;
     }
 
-   public void Bounce()
-    {
-        // reverses x velocity if they hit the left of the game window
-        // can drift off the right end as loose condition
-        if (position.x < -8f)
-        {
-            position.x = -8f;
-            velocity.x = -velocity.x;
-        }
-        // reverses y velocity if they hit the bottom or top of the game window
-        else if (position.y > 5f || position.y < -5f)
-        {
-            position.y = 5 * Mathf.Sign(position.y);
-            velocity.y = -velocity.y;
-        }
-    }
-
     // Start is called before the first frame update
     void Start()
     {
         gravity = new Vector3(0, -1, 0);
+        position = transform.position;
     }
 
     // Update is called once per frame
@@ -73,7 +61,6 @@ public class PhysicsObject : MonoBehaviour
         // adjusts velocity
         velocity += acceleration * Time.deltaTime;
         velocity = Vector3.ClampMagnitude(velocity, maxSpeed);
-        Bounce();
         // adjusts position and direction accordingly
         position += velocity * Time.deltaTime;
         direction = velocity.normalized;

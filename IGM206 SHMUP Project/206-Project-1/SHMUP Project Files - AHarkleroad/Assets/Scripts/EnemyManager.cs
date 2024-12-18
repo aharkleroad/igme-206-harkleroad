@@ -4,20 +4,22 @@ using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {
+    // field declaration
     private EnemySpawn enemySpawn;
     private Enemy enemy;
+    public Player player;
+    private int enemyNumber;
 
     // gets rid of enemies once they've left the screen or been destroyed by the player
     public void RemoveEnemies()
     {
-        for (int i = 0; i < enemySpawn.enemyList.Count; i++)
+        enemyNumber = enemySpawn.enemyList.Count;
+        for (int i = 0; i < enemyNumber; i++)
         {
             if (enemySpawn.enemyList[i].DesiredLocation == enemySpawn.enemyList[i].position 
-             || ((Enemy)enemySpawn.enemyList[i]).health == 0
-            )
+             || ((Enemy)enemySpawn.enemyList[i]).health == 0)
             {
                 Destroy(enemySpawn.enemyList[i]);
-                enemySpawn.enemyList.RemoveAt(i);
             }
         }
     }

@@ -4,20 +4,16 @@ using UnityEngine;
 
 public class PlayerProjectiles : Projectiles
 {
+    public List<GameObject> playerProjectiles;
+
     protected override void CalcSteeringForces()
     {
-        
+        Seek(desiredLocation);
     }
 
-    // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        base.Start();
+        desiredLocation = new Vector3(-9f, physics.Position.y, 0f);
     }
 }

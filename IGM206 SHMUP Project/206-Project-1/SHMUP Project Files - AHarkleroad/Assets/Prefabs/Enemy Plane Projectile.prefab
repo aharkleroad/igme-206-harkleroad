@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 3198426773255054803}
   - component: {fileID: 4144747103681408671}
   - component: {fileID: 6544972481944176319}
+  - component: {fileID: -8244768417697237050}
+  - component: {fileID: 8526877454724376468}
   m_Layer: 0
   m_Name: Enemy Plane Projectile
   m_TagString: Untagged
@@ -45,10 +47,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19545a86b3e49bf49a08783a25d99c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 1
+  health: 1
   maxSpeed: 10
   maxForce: 12
   enemyProjectileList: []
-  player: {fileID: 0}
+  player: {fileID: 1264808936338887721, guid: 8a209ffcc1b336e49be78797537e7f6d, type: 3}
 --- !u!212 &6544972481944176319
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -101,3 +105,30 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-8244768417697237050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2768180361788039368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f6185422b0c383448793b9cea055014, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8526877454724376468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2768180361788039368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8856f39b60bee643ba0873d91c5a52e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 0.5
+  strengthOfGravity: 0
+  maxSpeed: 8

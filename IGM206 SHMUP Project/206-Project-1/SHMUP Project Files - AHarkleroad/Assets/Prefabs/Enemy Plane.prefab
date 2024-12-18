@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 4809083784097299653}
   - component: {fileID: 8696377350393612747}
   - component: {fileID: 8774842721326633943}
+  - component: {fileID: 4719493718575354442}
+  - component: {fileID: -7408658997564116576}
   m_Layer: 0
   m_Name: Enemy Plane
   m_TagString: Untagged
@@ -98,11 +100,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d403ae9ab92ceda4fab0ed001dde92b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
+  health: 2
+  damage: 3
   maxSpeed: 8
   maxForce: 10
   position: {x: 0, y: 0, z: 0}
   timeBetweenShots: 1
+  player: {fileID: 1264808936338887721, guid: 8a209ffcc1b336e49be78797537e7f6d, type: 3}
   planeProjectilePrefab: {fileID: 2768180361788039368, guid: e6db0e6b5ad7b0c4284e9f77aededacf, type: 3}
 --- !u!114 &8774842721326633943
 MonoBehaviour:
@@ -116,7 +120,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19545a86b3e49bf49a08783a25d99c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 1
+  health: 1
   maxSpeed: 10
   maxForce: 12
   enemyProjectileList: []
   player: {fileID: 1264808936338887721, guid: 8a209ffcc1b336e49be78797537e7f6d, type: 3}
+--- !u!114 &4719493718575354442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3420501323730699422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8856f39b60bee643ba0873d91c5a52e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 5
+  strengthOfGravity: 0
+  maxSpeed: 8
+--- !u!114 &-7408658997564116576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3420501323730699422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f6185422b0c383448793b9cea055014, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

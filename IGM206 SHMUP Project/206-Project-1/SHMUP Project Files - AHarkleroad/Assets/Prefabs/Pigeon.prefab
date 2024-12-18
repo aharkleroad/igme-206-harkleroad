@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 2464811916313198570}
   - component: {fileID: 4327907012536128454}
   - component: {fileID: -7120971158564789692}
+  - component: {fileID: 557271163774156651}
+  - component: {fileID: 5949338478988288406}
   m_Layer: 0
   m_Name: Pigeon
   m_TagString: Untagged
@@ -99,10 +101,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  damage: 2
   maxSpeed: 6
   maxForce: 10
   position: {x: 0, y: 0, z: 0}
   timeBetweenShots: 2
+  player: {fileID: 1264808936338887721, guid: 8a209ffcc1b336e49be78797537e7f6d, type: 3}
+  gameManager: {fileID: 0}
   turnFrequency: 20
   pigeonProjectilePrefab: {fileID: 4579508935178178284, guid: ece23847a03e5b644a9f9fbd1075c869, type: 3}
 --- !u!114 &-7120971158564789692
@@ -117,6 +122,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b45ec380bbd8e149ae0adf950af2e5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 1
+  health: 1
   maxSpeed: 8
   maxForce: 8
   enemyProjectileList: []
+  player: {fileID: 0}
+  gameManager: {fileID: 0}
+--- !u!114 &557271163774156651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864980194285830910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f6185422b0c383448793b9cea055014, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+--- !u!114 &5949338478988288406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864980194285830910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8856f39b60bee643ba0873d91c5a52e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 1
+  strengthOfGravity: 0
+  maxSpeed: 7

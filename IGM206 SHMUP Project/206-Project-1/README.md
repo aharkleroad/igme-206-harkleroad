@@ -32,20 +32,24 @@ many other obstacles that aim to get stuck in the propellor, bring down the plan
 
 ## You Additions
 
-Nothing has been added yet, but I want to design my own assets and add in a variety of different and fun enemies with unique attacks,
-like other planes, birds, etc.
+-  Created all art, including health counters which are not visible in the build
+-  Implemented two unique enemy types and planned a third "enemy" that would impact player movement
+-  Player collides with the screen on all but the right wall (intentionally)
 
 ## Sources
 
 -  N/A
 
 ## Known Issues
-
--  Player movement is way too slow, patched at the moment by multiplying the acceleration by 30 in the PhysicsSHMUP script
-    -  Not affected by changing the player's mass
--  The sprite rotation is wrong by 270 degrees
+-  The sprite rotation is wrong
+-  The pigeons only move across half the screen
+-  The enemy projectiles do not move once fired
+-  The trajectory of the player projectiles angles slightly up or down randomly
+-  The collision system I added is not able to access all the components it needs to funtion properly
 
 ### Requirements not completed
 
-None
+-  Did not add a visual health indicator
+-  Did not add a scoring system
+-  Did not implement the game over condition (outside of destroying the player object if health reaches 0)
 
