@@ -1,0 +1,180 @@
+1. First create class Car to construct car objects
+    Principle functions of Car should include:
+        A Car constructor that determines the road the car is travelling on
+        Get the road the car is driving on
+        Get the car's arrival time
+        Get the direction the car will turn
+        Set the car's arrival time
+        Set the time it takes the car to pass through the intersection
+
+2. Then create the EventManager class that extends Comparable to hold Events
+    Principle functions of EventManager should include:
+        An EventManager constructor
+        Add generic objects to the manager chronologically
+        Return an object at a given index in the manager
+        Remove an object from the manager at a given index
+
+3. Then create the class Events that implements Comparable to create event objects
+    Principle functions of Event should include:
+        Create an Events object that sets the event type, associates it with a car, and sets the time it occurs
+        Create an Events object that sets the event type and the time it occurs
+        Get the time an event occurs
+        Get the type of event
+        Compare the time two events occur
+
+4. Finally create the Driver class to implement the event-based sim
+    Principle functions of Driver should include:
+        Create the time clock
+        Create the tracker for the EW cars, the NS cars, and the total cars that enter the intersection
+        Create two variables to hold the sum total of the cars on the EW road and NS road
+        Create a variable to count the number of times an event is dealt with
+        Create the wait time trackers
+        Create three variables to track if the EW light is green, the NS light is green, and/or the NS arrow is green
+        Create a variable to track if there is a EW car in the intersection
+        Create a variable to track if there is a NS car in the intersection
+        Create an ArrayList that holds the cars waiting on the EW road
+        Create a variable to save the number of cars on the EW road
+        Create an ArrayList that holds the cars waiting on the NS road
+        Create a variable to save the number of cars on the NS road
+        Create an EventManager object
+        Create the shutdown event
+        Add the shutdown event to the EventManager
+        Create an event to start the light cycle at the beginning of the sim
+        Add the event to the EventManager
+        Determine the time the first car arrives
+        Create an arrival event for the first car
+        Add the arrival event to the EventManager
+        Create an Events object to save the current event and set it equal to the first event in the EventManager
+        While the current event is not the shutdown event
+            Determine the time that has passed since the last event
+            Determine the number of cars on the EW road
+            Add the number of cars on the EW road to the running total
+            Add the sum of the time every car in line waited to the total wait time trackers and EW wait time trackers
+            Determine the number of cars going north on the NS road
+            Add the number of cars on the NS road to the running total
+            Add the sum of the time every car in line waited to the total wait time trackers and NS wait time trackers
+            Set the clock time to the time of the current event
+            Create a switch based on event type
+                In event type 1 (a car arrives at the intersection)
+                    Increase the number of cars that have arrived
+                    If the car is on the EW road
+                        Add the car to the EW queue
+                        Set the arrival time of that car
+                        If the EW light is green, there is exactly 1 car in the queue, and there isn't a EW car in the intersection
+                            Create a new event for the car to enter the intersection and add it to the manager
+                    Otherwise
+                        Add the car to the NS queue
+                        Set the arrival time of that car
+                        If the NS light is green, there is exactly 1 car in the queue, and there isn't a NS car in the intersection
+                            Create a new event for the car to enter the intersection and add it to the manager
+                    Generate the arrival time of the next car
+                    Create the arrival event and add it to the manager
+                    If the time is between 500 and 500.166 hours
+                        Print the time the car arrives
+                In event type 2 (car enters a queue)
+                    Print an error message
+                In event type 3 (car from the EW road enters the intersection)
+                    If there is already a car from the EW road in the intersection
+                        Print an error message
+                    If the car for the current event is not the first car in the EW queue
+                        Print an error message
+                    Set the tracker for EW car in the intersection to true
+                    Generate a random integer to determine the turn direction
+                    If the random number is less than 70
+                        Have the car turn south
+                        Generate the time the car will exit the intersection
+                    Otherwise
+                        Have the car turn north
+                        Generate the time the car will exit the intersection
+                    Create the exit event and add it to the manager
+                    Iterate the total cars through line and EW cars through the intersection
+                    If the time is between 500 and 500.166 hours
+                        Print that an EW car is entering the intersection
+                In event type 4 (car from the NS road enters the intersection)
+                    If there is already a car from the NS road in the intersection
+                        Print an error message
+                    If the car for the current event is not the first car in the NS queue
+                        Print an error message
+                    Set the tracker for NS car in the intersection to true
+                    Generate a random integer to determine the turn direction
+                    If the random number is less than 25
+                        Have the car turn west
+                    Otherwise
+                        The car continues straight
+                    If the car doesn't turn
+                        Generate the time the car will leave the intersection
+                        Create the exit event and add it to the manager
+                        If the time is between 500 and 500.166 hours
+                            Print that an NS car is entering the intersection
+                    Otherwise, if there is a green arrow
+                        Generate the time the car will leave the intersection
+                        Create the exit event and add it to the manager
+                        If the time is between 500 and 500.166 hours
+                            Print that an NS car is entering the intersection
+                    Otherwise
+                        Generate a random number to determine if there is traffic
+                        If there is no traffic
+                            Generate the time the car will leave the intersection
+                            Create the exit event and add it to the manager
+                            If the time is between 500 and 500.166 hours
+                                Print that an EW car is entering the intersection
+                        Otherwise
+                            Set the tracker for if there is a NS car in the intersection to false
+                            Decrement the total cars through the line and the NS cars through the line
+                            If the time is between 500 and 500.166 hours
+                                Print that the car must wait
+                    Iterate the total cars through line and NS cars through the intersection
+                In event type 5 (an EW car exits the intersection)
+                    If there is no EW car in the intersection
+                        Print an error message
+                    Set the tracker for EW car in the intersection to false
+                    Remove the first car from the EW queue
+                    If the EW light is still green and there is at least one other car in the EW queue
+                        Create the intersection entrance event for the next EW car
+                        Add the event to the manager
+                In event type 6 (an NS car exits the intersection)
+                    If there is no NS car in the intersection
+                        Print an error message
+                    Set the tracker for NS car in the intersection to false
+                    Remove the first car from the NS queue
+                    If the NS light is still green and there is at least one other car in the NS queue
+                        Create the intersection entrance event for the next NS car
+                        Add the event to the manager
+                In event type 7 (EW light turns green)
+                    Set EW light to green
+                    Set the NS light to red
+                    Create a new event to change the EW light red in two minutes
+                    Add the event to the manager
+                    If there is at least 1 car in the EW queue
+                        Create an intersection entrance event for that car
+                        Add the event to the manager
+                    If the time is between 500 and 500.166 hours
+                        Print that the EW light turns green
+                In event type 8 (NS light turns green)
+                    Set EW light to red
+                    Set the NS light to green
+                    Set the NS arrow to green
+                    Create a new event to shut off the NS arrow in 1 minute
+                    Add the event to the manager
+                    If there is at least 1 car in the NS queue
+                        Create an intersection entrance event for that car
+                        Add the event to the manager
+                    If the time is between 500 and 500.166 hours
+                        Print that the NS light turns green
+                In event type 9 (NS arrow turns off)
+                    Set green arrow to off
+                    Create a new event to turn the NS light off in two minutes
+                    Add the event to the manager
+                    If the time is between 500 and 500.166 hours
+                        Print that the NS arrow turns off
+                In event type 10 (shutdown event)
+                    Print an error message
+                In the default case
+                    Print an error message
+            Remove the current event from the event queue
+            Set the current event equal to the next event in the queue
+            Iterate the tracker for times through the while loop (events handled)
+        Calculate the average wait for all the cars, the NS cars, and the EW cars
+        Calculate the average number of cars on a given road
+        Print the statistics for the run
+        Calculate the time a car will arrive at or exit the intersection
